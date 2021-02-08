@@ -3960,11 +3960,12 @@ blockquote .shape {
    Clients CSS
 ======================================== */
 .client-logo-section {
-    padding: 30px 0;
+    padding: 0 14px 0 0;
+    margin-right: 5%;
 }
 
 .client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -3985,7 +3986,6 @@ blockquote .shape {
 ======================================== */
 .apply-process {
     background-color: #111111;
-    padding-left: 1%;
 }
 
 .apply-process .process-item {
@@ -8900,4 +8900,34 @@ blockquote .shape {
 .homepage-icons-distance {
     margin-left: 10px;
 }
+
+.overlay-text-left {
+    position: absolute;
+    bottom: 100px;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #111111;
+}
+
+.overlay-text-right {
+    position: absolute;
+    bottom: 100px;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    right: 0;
+    padding: 2%;
+}
+
+@media (min-width:468px) and (max-width:768px) {
+    .overlay-text-left {
+        position: absolute;
+        bottom: 70%;
+        max-width: 200px;
+        background-color: rgba(0, 0, 0, 0.73);
+        right: 0;
+        width: 100%;
+    }
 }
