@@ -986,7 +986,100 @@ ol {
     right: 0;
 }
 
-/* Bread Crumbs */
+/* Bread Crumbs Galerry */
+.breadcrumbs-gallery {
+    position: relative;
+    padding: 70px 0;
+    padding-top: 150px;
+    background-image: url("/assets/images/club/RebuyStarsZg_1.jpg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    text-align: left;
+}
+
+.breadcrumbs-gallery.overlay::before {
+    background-color: #000000;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.breadcrumbs-gallery .breadcrumbs-content {
+    position: relative;
+    text-align: left;
+}
+
+.breadcrumbs-gallery .breadcrumbs-content p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.breadcrumbs-gallery .breadcrumbs-content .page-title {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 22px;
+    line-height: 50px;
+}
+
+.breadcrumbs-galleryr .breadcrumbs-content .page-title:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 80px;
+    background: #fff;
+}
+
+.breadcrumbs-gallery .breadcrumbs-content .breadcrumb-nav {
+    background: transparent;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li {
+    display: inline-block;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li,
+.breadcrumbs-gallery .breadcrumb-nav li a {
+    color: #f1d209;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li a {
+    padding-right: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li a:after {
+    content: '';
+    height: 80%;
+    width: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+/* Bread Crumbs Bar */
 .breadcrumbs_bar {
     background-color: transparent;
     position: relative;
@@ -7702,8 +7795,8 @@ blockquote .shape {
 }
 
 .contact-us .single-info i {
-    color: #2042e3;
-    font-size: 18px;
+    color: #f1d209;
+    font-size: 20px;
     display: inline-block;
     margin-right: 20px;
     position: absolute;
@@ -8813,6 +8906,11 @@ blockquote .shape {
     }
 }
 
+.padding_gallery {
+    padding: 10px;
+    height: 490px;
+}
+
 @media (min-width:993px) and (max-width:1199px) {
     .full_width_gallery {
         padding: 2px 2px 10px;
@@ -8821,7 +8919,7 @@ blockquote .shape {
     }
 
     .padding_gallery {
-        padding: 10px;
+        padding-top: 10px;
         height: 480px;
     }
 }
@@ -8886,16 +8984,15 @@ blockquote .shape {
 }
 
 .rb-jackpots {
-    margin: 0 auto;
     max-width: 100%;
-    text-align: center;
     display: block;
     width: 100%;
+    text-align: center;
 }
 
 .rb-jackpot {
     margin: 0 auto;
-    width: 220px;
+    width: 250px;
     text-align: left;
     padding: 0 10px;
     margin-right: 2px;
@@ -8933,21 +9030,21 @@ blockquote .shape {
     background-image: -webkit-linear-gradient(top, purple, pink, purple 50%, pink);
     background-image: -o-linear-gradient(top, purple, pink, purple 50%, pink);
     background-image: linear-gradient(to bottom, purple, pink 30%, purple, pink);
-    font-size: 16px;
+    font-size: 1.3rem;
 }
 
 .rb-jackpot--gold .rb-jackpot__label {
     background-image: -webkit-linear-gradient(top, #946B00, #FFFF6A 50%, gold, #FFFF6A);
     background-image: -o-linear-gradient(top, #946B00, #FFF76A 50%, gold, #FFFF6A);
     background-image: linear-gradient(to bottom, #946B00, #FFF76A 30%, gold, #FFFF6A);
-    font-size: 16px;
+    font-size: 1.3rem;
 }
 
 .rb-jackpot--silver .rb-jackpot__label {
     background-image: -webkit-linear-gradient(TOP, GREY, #EFEFEF 50%, GREY);
     background-image: -o-linear-gradient(TOP, GREY, #EFEFEF 50%, GREY);
     background-image: linear-gradient(to bottom, GREY, #EFEFEF 30%, GREY, #EFEFEF);
-    font-size: 16px;
+    font-size: 1.3rem;
 }
 
 .rb-jackpot--bronze .rb-jackpot__label {
@@ -8955,7 +9052,17 @@ blockquote .shape {
     background-image: -o-linear-gradient(TOP, #CA822C, #F6C656 50%, #CA822C);
     background-image: linear-gradient(to bottom,
                 #CA822C, #F6C656 30%, #CA822C, #F6C656);
-    font-size: 16px;
+    font-size: 1.3rem;
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .rb-jackpot {
+        margin: 0 auto;
+        width: 300px;
+        text-align: left;
+        padding: 0 10px;
+        margin-right: 2px;
+    }
 }
 
 .rb-jackpot--rebuy .rb-jackpot__value {
@@ -9053,4 +9160,9 @@ blockquote .shape {
     .landing-logo {
         width: 100px;
     }
+}
+
+.container-full-width {
+    width: 100%;
+}
 }
