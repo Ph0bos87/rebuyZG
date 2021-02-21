@@ -125,6 +125,7 @@ h2 {
 
 h3 {
     font-size: 30px;
+    font-weight: 600;
 }
 
 h4 {
@@ -908,7 +909,7 @@ ol {
 
 .breadcrumbs.overlay::before {
     background-color: #000000;
-    opacity: 0.8;
+    opacity: 0.7;
     z-index: -1;
 }
 
@@ -985,7 +986,100 @@ ol {
     right: 0;
 }
 
-/* Bread Crumbs */
+/* Bread Crumbs Galerry */
+.breadcrumbs-gallery {
+    position: relative;
+    padding: 70px 0;
+    padding-top: 150px;
+    background-image: url("/assets/images/club/RebuyStarsZg_1.jpg");
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    text-align: left;
+}
+
+.breadcrumbs-gallery.overlay::before {
+    background-color: #000000;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.breadcrumbs-gallery .breadcrumbs-content {
+    position: relative;
+    text-align: left;
+}
+
+.breadcrumbs-gallery .breadcrumbs-content p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.breadcrumbs-gallery .breadcrumbs-content .page-title {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 22px;
+    line-height: 50px;
+}
+
+.breadcrumbs-galleryr .breadcrumbs-content .page-title:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 80px;
+    background: #fff;
+}
+
+.breadcrumbs-gallery .breadcrumbs-content .breadcrumb-nav {
+    background: transparent;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li {
+    display: inline-block;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li,
+.breadcrumbs-gallery .breadcrumb-nav li a {
+    color: #f1d209;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li a {
+    padding-right: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs-gallery .breadcrumb-nav li a:after {
+    content: '';
+    height: 80%;
+    width: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+/* Bread Crumbs Bar */
 .breadcrumbs_bar {
     background-color: transparent;
     position: relative;
@@ -1394,8 +1488,6 @@ ol {
     position: fixed;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.68);
-    -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
     top: 0;
@@ -1407,7 +1499,6 @@ ol {
 
 .sticky .navbar .navbar-nav .nav-item a.active {
     color: #f1d209;
-    background-color: #000000;
 }
 
 .sticky .navbar .navbar-toggler .toggler-icon {
@@ -1533,7 +1624,6 @@ ol {
     transition: all 0.3s ease-out 0s;
     padding: 30px 0;
     position: relative;
-    text-transform: capitalize;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1631,11 +1721,39 @@ ol {
     .navbar-nav .nav-item:hover .sub-menu {
         top: 0;
     }
+
+    .navbar-nav .nav-item a::before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        height: 1px;
+        background: #a61474;
+        z-index: -1;
+        opacity: 0;
+        border-radius: 10px;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        z-index: 5;
+    }
 }
 
 @media (max-width: 767px) {
     .navbar-nav .nav-item:hover .sub-menu {
         top: 0;
+    }
+
+    .navbar-nav .nav-item a::before {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        height: 1px;
+        background: #a61474;
+        z-index: -1;
+        opacity: 0;
+        border-radius: 10px;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        z-index: 5;
     }
 }
 
@@ -1782,7 +1900,7 @@ ol {
 
 /* Dropdown Menu */
 .header .navbar-nav li .sub-menu {
-    background: rgba(13, 13, 13, 0.8);
+    background: rgba(13, 13, 13, 0.9);
     width: 220px;
     text-align: left;
     position: absolute;
@@ -1793,8 +1911,6 @@ ol {
     padding: 15px;
     left: 0;
     margin: 0;
-    -webkit-box-shadow: 1px 4px 12px rgba(51, 51, 51, 0.25);
-    box-shadow: 0px 13px 20px rgba(153, 153, 153, 0.06);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     z-index: 9999999;
@@ -1834,7 +1950,6 @@ ol {
     display: block;
     font-size: 14px;
     font-weight: normal;
-    text-transform: capitalize;
     background: transparent;
     border-radius: 3px;
     font-weight: 400;
@@ -1988,6 +2103,14 @@ ol {
     height: 360px;
 }
 
+.hero-area.style2 .hero-inner-landing .hero-text {
+    margin-top: 420px;
+    background-color: #000000;
+    padding-top: 2%;
+    border: 10px solid #111111;
+    height: 300px;
+}
+
 .hero-area.style2 .hero-image {
     position: relative;
     bottom: -120px;
@@ -1995,6 +2118,45 @@ ol {
     border: 10px solid #111111;
     overflow: hidden;
     height: 430px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .hero-area.style2 .hero-image-landing {
+        position: relative;
+        border: 10px solid #111111;
+        overflow: hidden;
+        top: -65px;
+        max-width: 350px;
+        height: 275px;
+    }
+
+    .hero-area.style2 .hero-image-landing2 {
+        position: relative;
+        top: -340px;
+        left: 400px;
+        border: 10px solid #111111;
+        overflow: hidden;
+        max-width: 350px;
+        height: 275px;
+    }
+}
+
+@media (min-width: 468px) and (max-width: 767px) {
+    .hero-area.style2 .hero-image-landing {
+        position: relative;
+        margin-top: -90px;
+        border: 10px solid #111111;
+        overflow: hidden;
+        height: 205px;
+    }
+
+    .hero-area.style2 .hero-image-landing2 {
+        position: relative;
+        margin-bottom: 120px;
+        border: 10px solid #111111;
+        overflow: hidden;
+        height: 250px;
+    }
 }
 
 .hero-area.style2 .hero-image-landing {
@@ -2008,11 +2170,11 @@ ol {
 
 .hero-area.style2 .hero-image-landing2 {
     position: relative;
-    bottom: -110px;
+    bottom: -130px;
     right: 0;
     border: 10px solid #111111;
     overflow: hidden;
-    height: 275px;
+    height: 225px;
 }
 
 .hero-area.style2 .tns-controls {
@@ -2622,7 +2784,6 @@ ol {
     Popular games CSS
 ======================================== */
 .popular_games {
-    padding: 5%;
 }
 
 .popular_games .content-left {
@@ -3960,8 +4121,10 @@ blockquote .shape {
    Clients CSS
 ======================================== */
 .client-logo-section {
-    padding: 0 14px 0 0;
     margin-right: 5%;
+    margin-top: -10%;
+    padding-bottom: 0px;
+    margin-bottom: -10%;
 }
 
 .client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo {
@@ -3990,8 +4153,9 @@ blockquote .shape {
 
 .apply-process .process-item {
     position: relative;
-    padding-right: 0;
-    width: 200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .apply-process .process-item i {
@@ -4026,6 +4190,18 @@ blockquote .shape {
     display: block;
     margin-bottom: 20px;
     padding-bottom: 20px;
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .apply-process .process-item h4 {
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
 }
 
 .apply-process .process-item h4::before {
@@ -6195,8 +6371,8 @@ blockquote .shape {
     }
 
     .hero-area.style2 .hero-inner .hero-text {
-        margin-top: 130px;
-        height: 290px;
+        margin-top: 30px;
+        height: 240px;
     }
 
     .hero-area.style2 .tns-controls button {
@@ -6717,6 +6893,7 @@ blockquote .shape {
         padding-bottom: 0px;
         background-color: #000000;
         background-image: url('/assets/images/slider/slider_club.jpg');
+        margin-top: -115px;
     }
 
     .hero-area .hero-text {
@@ -6755,7 +6932,7 @@ blockquote .shape {
     .hero-area.style2 .hero-inner .hero-text {
         margin-top: 120px;
         padding: 0 !important;
-        height: 310px;
+        height: 200px;
     }
 
     .hero-area.style2 .hero-inner .hero-text .btn {
@@ -7580,11 +7757,8 @@ blockquote .shape {
 }
 
 .contact-us .contant-inner-title h4 {
-    font-size: 22px;
     font-weight: 600;
-    margin-bottom: 5px;
-    color: #081828;
-    text-transform: capitalize;
+    margin-bottom: 10px;
 }
 
 .contact-us .contant-inner-title p {
@@ -7612,8 +7786,8 @@ blockquote .shape {
 }
 
 .contact-us .single-info i {
-    color: #2042e3;
-    font-size: 18px;
+    color: #f1d209;
+    font-size: 20px;
     display: inline-block;
     margin-right: 20px;
     position: absolute;
@@ -7921,15 +8095,16 @@ blockquote .shape {
     justify-content: center;
     right: 20px;
     top: 20px;
-    background: #eee !important;
+    background: #f1d209 !important;
+    color: #9e005d;
     border-radius: 3px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 
 .circle-32:hover {
-    background-color: #081828 !important;
-    color: #fff !important;
+    background-color: #9e005d !important;
+    color: #f1d209 !important;
 }
 
 .btn-reset {
@@ -7970,7 +8145,6 @@ blockquote .shape {
     bottom: 0;
     height: 2px;
     width: 50px;
-    background-color: #a61474;
 }
 
 .modal .login-modal-main .social-login {
@@ -8377,10 +8551,10 @@ blockquote .shape {
 }
 
 .footer .newsletter button {
-    height: 60px;
+    height: 65px;
     margin-top: 15px;
     width: 100%;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .rebuy_gold {
@@ -8469,6 +8643,12 @@ blockquote .shape {
     }
 }
 
+@media (min-width:992px) and (max-width:1200px) {
+    .align_icons_homepage {
+        margin-left: 10%;
+    }
+}
+
 @media (max-width:768px) {
     .align_icons_homepage {
         margin-left: 35%;
@@ -8478,9 +8658,6 @@ blockquote .shape {
 .footer_paragraph {
     font-size: 16px;
     line-height: 30px;
-}
-
-.distance_column_footer {
 }
 
 .about-us_h3 {
@@ -8675,13 +8852,24 @@ blockquote .shape {
 }
 
 .purple_partial_border {
-    border-right: 5px solid #a61474;
-    border-bottom: 5px solid #a61474;
+    border-bottom: 1px solid #a61474;
 }
 
 .bonus_card_img {
     padding: 15px;
-    background-image: url('../images/bonus_card/bonusing_vz.jpg');
+    background-image: url('../images/promo_subota/rs_PROMOsUBOTA-600x600.jpeg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-right: 1px solid #a61474;
+    margin-bottom: 55%;
+}
+
+.promo_subota_img {
+    padding: 15px;
+    background-image: url('../images/bonus_card/bonusing_zg.jpg');
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -8693,14 +8881,11 @@ blockquote .shape {
 
 .current_rewards {
     padding: 15px;
-    background-image: url('../images/nagradne_igre/RebuyStars_zAbODOVAsICUoDVEZIfICU.jpg');
     width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     border-right: 1px solid #a61474;
-    margin-bottom: 55%;
 }
 
 .text_rewards_h3 {
@@ -8718,6 +8903,11 @@ blockquote .shape {
     }
 }
 
+.padding_gallery {
+    padding: 10px;
+    height: 490px;
+}
+
 @media (min-width:993px) and (max-width:1199px) {
     .full_width_gallery {
         padding: 2px 2px 10px;
@@ -8726,7 +8916,7 @@ blockquote .shape {
     }
 
     .padding_gallery {
-        padding: 10px;
+        padding-top: 10px;
         height: 480px;
     }
 }
@@ -8749,13 +8939,10 @@ blockquote .shape {
 .cabaret-upcoming {
     padding: 15px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     border-right: 1px solid #a61474;
-    background-image: url('../images/cabaret/2020_03_Gazde.jpg');
-    height: 100%;
-    margin-bottom: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #111111;
 }
 
 .cabaret-gallery {
@@ -8791,16 +8978,15 @@ blockquote .shape {
 }
 
 .rb-jackpots {
-    margin: 0 auto;
     max-width: 100%;
-    text-align: center;
     display: block;
     width: 100%;
+    text-align: center;
 }
 
 .rb-jackpot {
     margin: 0 auto;
-    width: 220px;
+    width: 250px;
     text-align: left;
     padding: 0 10px;
     margin-right: 2px;
@@ -8838,21 +9024,21 @@ blockquote .shape {
     background-image: -webkit-linear-gradient(top, purple, pink, purple 50%, pink);
     background-image: -o-linear-gradient(top, purple, pink, purple 50%, pink);
     background-image: linear-gradient(to bottom, purple, pink 30%, purple, pink);
-    font-size: 16px;
+    font-size: 1.3rem;
 }
 
 .rb-jackpot--gold .rb-jackpot__label {
     background-image: -webkit-linear-gradient(top, #946B00, #FFFF6A 50%, gold, #FFFF6A);
     background-image: -o-linear-gradient(top, #946B00, #FFF76A 50%, gold, #FFFF6A);
     background-image: linear-gradient(to bottom, #946B00, #FFF76A 30%, gold, #FFFF6A);
-    font-size: 16px;
+    font-size: 1.3rem;
 }
 
 .rb-jackpot--silver .rb-jackpot__label {
     background-image: -webkit-linear-gradient(TOP, GREY, #EFEFEF 50%, GREY);
     background-image: -o-linear-gradient(TOP, GREY, #EFEFEF 50%, GREY);
     background-image: linear-gradient(to bottom, GREY, #EFEFEF 30%, GREY, #EFEFEF);
-    font-size: 16px;
+    font-size: 1.3rem;
 }
 
 .rb-jackpot--bronze .rb-jackpot__label {
@@ -8860,7 +9046,17 @@ blockquote .shape {
     background-image: -o-linear-gradient(TOP, #CA822C, #F6C656 50%, #CA822C);
     background-image: linear-gradient(to bottom,
                 #CA822C, #F6C656 30%, #CA822C, #F6C656);
-    font-size: 16px;
+    font-size: 1.3rem;
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .rb-jackpot {
+        margin: 0 auto;
+        width: 300px;
+        text-align: left;
+        padding: 0 10px;
+        margin-right: 2px;
+    }
 }
 
 .rb-jackpot--rebuy .rb-jackpot__value {
@@ -8904,7 +9100,7 @@ blockquote .shape {
 .overlay-text-left {
     position: absolute;
     bottom: 100px;
-    max-width: 200px;
+    max-width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     padding: 2%;
@@ -8930,4 +9126,56 @@ blockquote .shape {
         right: 0;
         width: 100%;
     }
+}
+
+.overlay-logo {
+    position: absolute;
+    bottom: 205px;
+    width: 240px;
+    z-index: 99;
+    display: block;
+    margin-left: 33%;
+}
+
+.overlay-landing-vz {
+    background-color: rgba(0, 0, 0, 0.83);
+    width: 350px;
+    position: absolute;
+    padding: 3%;
+    top: 0;
+    right: 0;
+}
+
+.landing-logo {
+    width: 200px;
+}
+
+@media (min-width:480px) and (max-width:768px){
+    .landing-logo {
+        width: 100px;
+    }
+}
+
+.container-full-width {
+    width: 100%;
+}
+
+.awards-icons {
+    display: block;
+    font-size: 45px;
+    color: #9e005d;
+}
+
+.rewards {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.ended-rewards {
+    width: 100%;
+    height: 400px;
+}
 }
