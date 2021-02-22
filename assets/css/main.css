@@ -2436,7 +2436,8 @@ ol {
 .hero-area .hero-text {
     float: none;
     margin-top: 230px;
-    padding-right: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .hero-area .hero-text h1 {
@@ -2444,7 +2445,8 @@ ol {
     font-weight: 700;
     line-height: 55px;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-area .hero-text h1 span {
@@ -6222,7 +6224,7 @@ blockquote .shape {
 /* Tablet Screen */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .section {
-        padding: 60px 0px 60px 5%;
+        padding: 60px 3%;
     }
 
     .section-title {
@@ -6371,15 +6373,15 @@ blockquote .shape {
     }
 
     .hero-area.style2 .hero-inner .hero-text {
-        margin-top: 30px;
-        height: 240px;
+        margin-top: 160px;
+        height: 260px;
     }
 
     .hero-area.style2 .tns-controls button {
         width: 50px;
         height: 50px;
         z-index: 2;
-        color: #fff;
+        color: #f1d209;
         font-size: 25px;
         background: transparent;
         border: none;
@@ -6728,7 +6730,7 @@ blockquote .shape {
 
     .section-title h2 {
         font-size: 25px;
-        margin-top: 3px;
+        margin-top: 20px;
         line-height: 35px;
     }
 
@@ -6930,9 +6932,9 @@ blockquote .shape {
     }
 
     .hero-area.style2 .hero-inner .hero-text {
-        margin-top: 120px;
-        padding: 0 !important;
-        height: 200px;
+        margin-top: 100px;
+        padding: 3% !important;
+        height: 280px;
     }
 
     .hero-area.style2 .hero-inner .hero-text .btn {
@@ -7737,7 +7739,6 @@ blockquote .shape {
     background-color: #000000;
     margin-top: 0;
     margin-bottom: 6px;
-    padding-left: 3%;
 }
 
 .contact-us .contact-head {
