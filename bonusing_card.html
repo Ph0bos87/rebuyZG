@@ -199,7 +199,7 @@
                         </div>                         
                     </div>                     
                 </div>                 
-                <div class="align_text_center button mt-40"> 
+                <div class="align_text_center button mt-40 wow fadeInUp" data-wow-delay=".4s"> 
                     <a href="javacript:" data-toggle="modal" data-target="#login" class="btn"><i class="lni lni-alarm"></i> Opći uvjeti</a> 
                 </div>
             </section>             
@@ -220,19 +220,19 @@
                     <div class="row"> 
                         <div class="rb-jackpots__wrapper">
                             <div class="rb-jackpots" data-endpoint="https://kirota.hr/jackpots_all.php">
-                                <div class="rb-jackpot rb-jackpot--rebuy" data-city="vz" data-type="rebuy">
+                                <div class="rb-jackpot rb-jackpot--rebuy wow flipInX" data-wow-delay=".2s" data-city="vz" data-type="rebuy">
                                     <h3 class="rb-jackpot__label">Rebuy Stars Jackpot</h3>
                                     <span class="rb-jackpot__value"></span>
                                 </div>
-                                <div class="rb-jackpot rb-jackpot--gold" data-city="vz" data-type="gold">
+                                <div class="rb-jackpot rb-jackpot--gold wow flipInX" data-wow-delay=".4s" data-city="vz" data-type="gold">
                                     <h3 class="rb-jackpot__label">Gold Jackpot</h3>
                                     <span class="rb-jackpot__value"></span>
                                 </div>
-                                <div class="rb-jackpot rb-jackpot--silver" data-city="vz" data-type="silver">
+                                <div class="rb-jackpot rb-jackpot--silver wow flipInX" data-wow-delay=".6s" data-city="vz" data-type="silver">
                                     <h3 class="rb-jackpot__label">Silver Jackpot</h3>
                                     <span class="rb-jackpot__value"></span>
                                 </div>
-                                <div class="rb-jackpot rb-jackpot--bronze" data-city="vz" data-type="bronze">
+                                <div class="rb-jackpot rb-jackpot--bronze wow flipInX" data-wow-delay=".8s" data-city="vz" data-type="bronze">
                                     <h3 class="rb-jackpot__label">Bronze Jackpot</h3>
                                     <span class="rb-jackpot__value"></span>
                                 </div>
@@ -537,12 +537,13 @@ Andrej Kremz, član uprave</p>
                         <div class="col-12 col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay=".4s"> 
                             <!-- Single Widget -->                             
                             <div class="f-about single-footer"> 
-                                <h3>Rebuy Stars Varaždin<br></h3> 
+                                <h3>Rebuy Stars Zagreb<br></h3> 
                                 <ul class="contact-address"> 
                                     <li> 
                                         <span>Adresa:</span>&nbsp;
-                                        <div>Ulica Grada Lipika 15, 42204, Donji Kneginec
-</div>                                         
+                                        <div>Avenija Većeslava Holjevca 62<br> 
+										10 010 Zagreb
+</div>                                                
                                     </li>                                     
                                     <li> 
                                         <span>Email:</span>&nbsp;
@@ -632,97 +633,7 @@ Andrej Kremz, član uprave</p>
         <script src="assets/js/tiny-slider.js"></script>         
         <script src="assets/js/glightbox.min.js"></script>         
         <script src="assets/js/main.js"></script>         
-        <script src="assets/js/countUp.js"></script>         
-        <script type="text/javascript">
-        //====== Clients Logo Slider
-        tns({
-            container: '.client-logo-carousel',
-            slideBy: 'page',
-            autoplay: true,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            gutter: 15,
-            nav: false,
-            controls: false,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                540: {
-                    items: 2,
-                },
-                768: {
-                    items: 3,
-                },
-                992: {
-                    items: 4,
-                },
-                1170: {
-                    items: 6,
-                }
-            }
-        });
-        //========= testimonial 
-        tns({
-            container: '.testimonial-slider',
-            items: 1,
-            slideBy: 'page',
-            autoplayButtonOutput: false,
-            autoplay: true,
-            mouseDrag: true,
-            gutter: 0,
-            nav: false,
-            controls: true,
-            controlsText: ['<i class="lni lni-arrow-left"></i>', '<i class="lni lni-arrow-right"></i>'],
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                540: {
-                    items: 1,
-                },
-                768: {
-                    items: 1,
-                },
-                992: {
-                    items: 1,
-                },
-                1170: {
-                    items: 1,
-                }
-            }
-        });
-
-        //======== Home Slider
-        var slider = new tns({
-            container: '.home-slider',
-            slideBy: 'page',
-            autoplay: false,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            gutter: 0,
-            items: 1,
-            nav: false,
-            speed: 1000,
-            controls: true,
-            controlsText: [
-                '<i class="lni lni-arrow-left prev"></i>',
-                '<i class="lni lni-arrow-right next"></i>'
-            ],
-            responsive: {
-                1200: {
-                    items: 1,
-                },
-                992: {
-                    items: 1,
-                },
-                0: {
-                    items: 1,
-                }
-
-            }
-        });
-    </script>         
+        <script src="assets/js/countUp.js"></script>                  
         <script type="text/javascript">
     jQuery(document).ready(function () {
         var reqUrl = "https://kirota.hr/jackpots_all.php";
