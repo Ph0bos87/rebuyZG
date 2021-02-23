@@ -27,6 +27,7 @@
         your experience and security.
       </p>
     <![endif]-->         
+        <div id="loading-area"></div>         
         <!-- Start Header Area -->         
         <header class="header"> 
             <div class="navbar-area"> 
@@ -107,11 +108,11 @@
         <div class="breadcrumbs-gallery overlay"> 
             <div class="container"> 
                 <div class="row"> 
-                    <div> 
+                    <div class="col-12 fadeInDown hero_background_text wow" data-wow-delay=".2s"> 
                         <div class="breadcrumbs_bar-content"> 
-                            <h1 class="wow fadeInDown" data-wow-delay=".2s">Galerija automat kluba u Zagrebu</h1> 
+                            <h1>Galerija automat kluba u Zagrebu</h1> 
                         </div>                         
-                        <ul class="breadcrumb-nav wow fadeInLeft" data-wow-delay=".4s"> 
+                        <ul class="breadcrumb-nav"> 
                             <li> 
                                 <a href="index.html">Home</a> 
                             </li>                             
@@ -294,7 +295,7 @@
                                 <div class="col-6 col-lg-6 col-md-6 fadeInLeft resize_small_window wow" data-wow-delay=".4s"> 
                                     <img class="grey_partial_border mt-10 single-img" src="assets/images/automati/Sizzling-Hot_deluxe-300x204-300x204.jpg" alt="#"> 
                                 </div>                                 
-                                <div class="col-6 col-lg-6 col-md-6 fadeInRight resize_small_window wow" data-wow-delay=".4s"> 
+                                <div class="col-6 col-lg-6 col-md-6 fadeInLeft resize_small_window wow" data-wow-delay=".4s"> 
                                     <img class="grey_partial_border mt-50 single-img" src="assets/images/automati/lucky_ladys_charm_slot_logo-300x204-300x204.jpg" alt="#"> 
                                 </div>                                 
                             </div>                             
@@ -304,7 +305,7 @@
                                 <div class="col-6 col-lg-6 col-md-6 fadeInLeft resize_small_window wow" data-wow-delay=".4s"> 
                                     <img class="grey_partial_border mt-10 single-img" src="assets/images/automati/Play-Book-of-Ra-Deluxe-for-free-1-300x204-300x204.jpg" alt="#"> 
                                 </div>                                 
-                                <div class="col-6 col-lg-6 col-md-6 fadeInRight resize_small_window wow" data-wow-delay=".4s"> 
+                                <div class="col-6 col-lg-6 col-md-6 fadeInLeft resize_small_window wow" data-wow-delay=".4s"> 
                                     <img class="grey_partial_border mt-50 single-img" src="assets/images/automati/2winpower_egt_20SuperHot.jpg" alt="#"> 
                                 </div>                                 
                             </div>                             
@@ -314,7 +315,7 @@
                                 <div class="col-6 col-lg-6 col-md-6 fadeInLeft resize_small_window wow" data-wow-delay=".4s"> 
                                     <img class="grey_partial_border mt-10 single-img" src="assets/images/automati/HOT-WiLD_header_1200x800_0-1-300x204-300x204.jpg" alt="#"> 
                                 </div>                                 
-                                <div class="col-6 col-lg-6 col-md-6 fadeInRight resize_small_window wow" data-wow-delay=".4s"> 
+                                <div class="col-6 col-lg-6 col-md-6 fadeInLeft resize_small_window wow" data-wow-delay=".4s"> 
                                     <img class="grey_partial_border mt-50 single-img" src="assets/images/automati/a79cc0f17-1-1-300x204-300x204.jpg" alt="#"> 
                                 </div>                                 
                             </div>                             
@@ -323,6 +324,150 @@
                 </div>                 
             </div>             
         </section>
+        <!-- Start Clients Area -->         
+        <div class="client-logo-section hide_all"> 
+            <div class="container"> 
+                <div class="client-logo-wrapper"> 
+                    <div class="client-logo-carousel d-flex align-items-center justify-content-between"> 
+</div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <!-- End Clients Area -->         
+        <!-- Login Modal -->         
+        <div class="modal fade form-modal" id="login" tabindex="-1" aria-hidden="true"> 
+            <div class="modal-dialog max-width-px-840 position-relative"> 
+                <button type="button" class="circle-32 btn-reset bg-white pos-abs-tr mt-md-n6 mr-lg-n6 focus-reset z-index-supper" data-dismiss="modal"> 
+                    <i class="lni lni-close"></i> 
+                </button>                 
+                <div class="login-modal-main"> 
+                    <div class="row no-gutters"> 
+                        <div class="col-12"> 
+                            <div class="row"> 
+                                <div class="heading"> 
+                                    <h3>Login From Here</h3> 
+                                    <p>Log in to continue your account <br> and explore new jobs.</p> 
+                                </div>                                 
+                                <div class="social-login"> 
+                                    <ul> 
+                                        <li> 
+                                            <a class="linkedin" href="#"><i class="lni lni-linkedin-original"></i> Log in
+                                            with LinkedIn</a> 
+                                        </li>                                         
+                                        <li> 
+                                            <a class="google" href="#"><i class="lni lni-google"></i> Log in with
+                                            Google</a> 
+                                        </li>                                         
+                                        <li> 
+                                            <a class="facebook" href="#"><i class="lni lni-facebook-original"></i> Log in
+                                            with Facebook</a> 
+                                        </li>                                         
+                                    </ul>                                     
+                                </div>                                 
+                                <div class="or-devider"> 
+                                    <span>Or</span> 
+                                </div>                                 
+                                <form action="/"> 
+                                    <div class="form-group"> 
+                                        <label for="email" class="label">E-mail</label>                                         
+                                        <input type="email" class="form-control" placeholder="example@gmail.com" id="email"> 
+                                    </div>                                     
+                                    <div class="form-group"> 
+                                        <label for="password" class="label">Password</label>                                         
+                                        <div class="position-relative"> 
+                                            <input type="password" class="form-control" id="password" placeholder="Enter password"> 
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="form-group d-flex flex-wrap justify-content-between"> 
+                                        <!-- Default checkbox -->                                         
+                                        <div class="form-check"> 
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/> 
+                                            <label class="form-check-label" for="flexCheckDefault">Remember password</label>                                             
+                                        </div>                                         
+                                        <a href="" class="font-size-3 text-dodger line-height-reset">Forget Password</a> 
+                                    </div>                                     
+                                    <div class="form-group mb-8 button"> 
+                                        <button class="btn ">Log in
+</button>                                         
+                                    </div>                                     
+                                    <p class="text-center create-new-account">Don’t have an account? <a href="#">Create a free account</a></p> 
+                                </form>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <!-- End Login Modal -->         
+        <!-- Signup Modal -->         
+        <div class="modal fade form-modal" id="signup" tabindex="-1" aria-hidden="true"> 
+            <div class="modal-dialog max-width-px-840 position-relative"> 
+                <button type="button" class="circle-32 btn-reset bg-white pos-abs-tr mt-md-n6 mr-lg-n6 focus-reset z-index-supper" data-dismiss="modal"> 
+                    <i class="lni lni-close"></i> 
+                </button>                 
+                <div class="login-modal-main"> 
+                    <div class="row no-gutters"> 
+                        <div class="col-12"> 
+                            <div class="row"> 
+                                <div class="heading"> 
+                                    <h3>Create a free Account <br> Today</h3> 
+                                    <p>Create your account to continue <br> and explore new jobs.</p> 
+                                </div>                                 
+                                <div class="social-login"> 
+                                    <ul> 
+                                        <li> 
+                                            <a class="linkedin" href="#"><i class="lni lni-linkedin-original"></i> Import from LinkedIn</a> 
+                                        </li>                                         
+                                        <li> 
+                                            <a class="google" href="#"><i class="lni lni-google"></i> Import from
+                                            Google</a> 
+                                        </li>                                         
+                                        <li> 
+                                            <a class="facebook" href="#"><i class="lni lni-facebook-original"></i> Import from Facebook</a> 
+                                        </li>                                         
+                                    </ul>                                     
+                                </div>                                 
+                                <div class="or-devider"> 
+                                    <span>Or</span> 
+                                </div>                                 
+                                <form action="/"> 
+                                    <div class="form-group"> 
+                                        <label for="email" class="label">E-mail</label>                                         
+                                        <input type="email" class="form-control" placeholder="example@gmail.com"> 
+                                    </div>                                     
+                                    <div class="form-group"> 
+                                        <label for="password" class="label">Password</label>                                         
+                                        <div class="position-relative"> 
+                                            <input type="password" class="form-control" placeholder="Enter password"> 
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="form-group"> 
+                                        <label for="password" class="label">Confirm Password</label>                                         
+                                        <div class="position-relative"> 
+                                            <input type="password" class="form-control" placeholder="Enter password"> 
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="form-group d-flex flex-wrap justify-content-between"> 
+                                        <!-- Default checkbox -->                                         
+                                        <div class="form-check"> 
+                                            <input class="form-check-input" type="checkbox" value=""> 
+                                            <label class="form-check-label" for="flexCheckDefault">Agree to the 
+                                                <a href="#">Terms & Conditions</a> 
+                                            </label>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                    <div class="form-group mb-8 button"> 
+                                        <button class="btn ">Sign Up
+</button>                                         
+                                    </div>                                     
+                                </form>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+        </div>         
+        <!-- End Signup Modal -->         
         <!-- Start Footer Area -->         
         <footer class="footer"> 
             <div class="custom-shape-divider-top-1612864592"> 
@@ -334,16 +479,15 @@
             <div class="footer-middle"> 
                 <div class="container"> 
                     <div class="row"> 
-                        <div class="col-12 col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay=".4s"> 
+                        <div class="col-12 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s"> 
                             <!-- Single Widget -->                             
                             <div class="f-about single-footer"> 
-                                <h3>Rebuy Stars Zagreb<br></h3> 
+                                <h3>Rebuy Stars Varaždin<br></h3> 
                                 <ul class="contact-address"> 
                                     <li> 
                                         <span>Adresa:</span>&nbsp;
-                                        <div>Avenija Većeslava Holjevca 62<br> 
-										10 010 Zagreb
-</div>                                            
+                                        <div>Ulica Grada Lipika 15, 42204, Donji Kneginec
+</div>                                         
                                     </li>                                     
                                     <li> 
                                         <span>Email:</span>&nbsp;
@@ -383,9 +527,9 @@
                                 <div class="col-lg-4 col-md-6 col-12"> 
                                     <!-- Single Widget -->                                     
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-12 wow fadeInRight" data-wow-delay=".8s"> 
+                                <div class="col-lg-4 col-md-6 col-12"> 
                                     <!-- Single Widget -->                                     
-                                    <div class="single-footer newsletter"> 
+                                    <div class="single-footer newsletter wow fadeInUp" data-wow-delay=".8s"> 
                                         <h3>Newsletter</h3> 
                                         <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner"> 
                                             <input name="EMAIL" placeholder="Tvoja email adresa" class="common-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'" required="" type="email"> 
