@@ -2,6 +2,15 @@
 Template Name: Rebuy Stars
 */
 
+(function () {
+    //===== Prealoder
+
+    window.onload = function () {
+        window.setTimeout(fadeout, 500);
+    }
+
+    function fadeout() {
+    }
 
     /*=====================================
     Sticky
