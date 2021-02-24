@@ -991,7 +991,7 @@ ol {
     position: relative;
     padding: 70px 0;
     padding-top: 150px;
-    background-image: url("/assets/images/club/RebuyStarsZg_1.jpg");
+    background-image: url("assets/images/club/RebuyStarsZg_1.jpg");
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
@@ -2103,6 +2103,34 @@ ol {
     height: 360px;
 }
 
+.hero-area .hero-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:998px) and (max-width:1199px) {
+    .hero-area.style2 .hero-inner .hero-text {
+        margin-top: 345px;
+        background-color: #000000;
+        padding-top: 2%;
+        border: 10px solid #111111;
+        height: 360px;
+    }
+
+    .hero-area .hero-text h1 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .hero-area.style2 .hero-inner-landing .hero-text {
     margin-top: 420px;
     background-color: #000000;
@@ -2122,22 +2150,23 @@ ol {
 
 @media (min-width: 768px) and (max-width: 992px) {
     .hero-area.style2 .hero-image-landing {
-        position: relative;
+        position: absolute;
         border: 10px solid #111111;
         overflow: hidden;
-        top: -65px;
         max-width: 350px;
-        height: 275px;
+        height: 255px;
+        left: 10%;
+        bottom: 5%;
     }
 
     .hero-area.style2 .hero-image-landing2 {
-        position: relative;
-        top: -340px;
-        left: 400px;
+        position: absolute;
         border: 10px solid #111111;
         overflow: hidden;
         max-width: 350px;
         height: 275px;
+        top: 30%;
+        right: 10%;
     }
 }
 
@@ -2159,24 +2188,23 @@ ol {
     }
 }
 
-.hero-area.style2 .hero-image-landing {
-    position: relative;
-    bottom: -120px;
-    right: 0;
+/* .hero-area.style2 .hero-image-landing {
+    position: absolute;
+    top: 20%;
     border: 10px solid #111111;
     overflow: hidden;
     height: 275px;
-}
-
-.hero-area.style2 .hero-image-landing2 {
-    position: relative;
-    bottom: -130px;
-    right: 0;
+    right: 10%;
+} */
+/* .hero-area.style2 .hero-image-landing2 {
+    position: absolute;
+    right: 10%;
     border: 10px solid #111111;
     overflow: hidden;
-    height: 225px;
-}
-
+    height: 275px;
+    width: 2;
+    top: 65%;
+} */
 .hero-area.style2 .tns-controls {
     width: 100%;
 }
@@ -2438,15 +2466,6 @@ ol {
     margin-top: 230px;
     padding-right: 10%;
     padding-left: 10%;
-}
-
-.hero-area .hero-text h1 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 55px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .hero-area .hero-text h1 span {
@@ -6374,7 +6393,7 @@ blockquote .shape {
 
     .hero-area.style2 .hero-inner .hero-text {
         margin-top: 160px;
-        height: 260px;
+        height: 265px;
     }
 
     .hero-area.style2 .tns-controls button {
@@ -6932,9 +6951,10 @@ blockquote .shape {
     }
 
     .hero-area.style2 .hero-inner .hero-text {
-        margin-top: 100px;
+        margin-top: 115px;
         padding: 3% !important;
-        height: 280px;
+        height: 320px;
+        margin-bottom: -5px;
     }
 
     .hero-area.style2 .hero-inner .hero-text .btn {
@@ -8974,8 +8994,7 @@ blockquote .shape {
 
 /* * Rebuy Jackpot CSS * */
 .rb-jackpots__wrapper {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 10%;
 }
 
 .rb-jackpots {
@@ -9100,33 +9119,21 @@ blockquote .shape {
 
 .overlay-text-left {
     position: absolute;
-    bottom: 100px;
     max-width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
     padding: 2%;
     border: 1px solid #111111;
 }
 
 .overlay-text-right {
-    position: absolute;
-    bottom: 100px;
-    max-width: 200px;
+    max-width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    right: 0;
-    padding: 2%;
-}
 
-@media (min-width:468px) and (max-width:768px) {
-    .overlay-text-left {
-        position: absolute;
-        bottom: 70%;
-        max-width: 200px;
-        background-color: rgba(0, 0, 0, 0.73);
-        right: 0;
-        width: 100%;
-    }
+    /* width: 100% */
+    padding: 2%;
+    position: absolute;
+    margin-right: auto;
+    right: 2.3%;
 }
 
 .overlay-logo {
@@ -9135,12 +9142,11 @@ blockquote .shape {
     width: 240px;
     z-index: 99;
     display: block;
-    margin-left: 33%;
+    margin-left: 25%;
 }
 
 .overlay-landing-vz {
     background-color: rgba(0, 0, 0, 0.83);
-    width: 350px;
     position: absolute;
     padding: 3%;
     top: 0;
