@@ -3064,8 +3064,7 @@ ol {
 
 .testimonials .tns-controls {
     position: absolute;
-    right: 1;
-    bottom: 40px;
+    bottom: 0px;
     z-index: 9;
 }
 
@@ -7183,7 +7182,7 @@ blockquote .shape {
         display: none;
     }
 
-    .testimonials .tns-controls {
+    /* .testimonials .tns-controls {
         position: absolute;
         right: 50%;
         bottom: -65px;
@@ -7192,8 +7191,7 @@ blockquote .shape {
         display: inline-block;
         -webkit-transform: translateX(50%);
         transform: translateX(50%);
-    }
-
+    } */
     .testimonials button {
         width: 45px !important;
         height: 40px !important;
@@ -8937,8 +8935,10 @@ blockquote .shape {
 }
 
 .padding_gallery {
-    padding: 10px;
-    height: 440px;
+    height: 490px;
+
+    /* padding-bottom: 25px */
+    padding-top: 10px;
 }
 
 @media (min-width:993px) and (max-width:1199px) {
@@ -8949,14 +8949,13 @@ blockquote .shape {
     }
 
     .padding_gallery {
-        padding-top: 10px;
-        height: 370px;
+        height: 415px;
     }
 
     .testimonials .tns-controls {
         position: absolute;
         right: 50%;
-        bottom: 110px;
+        bottom: 70px;
         z-index: 9;
         text-align: center;
         display: inline-block;
@@ -8966,8 +8965,16 @@ blockquote .shape {
 }
 
 @media (min-width:320px) and (max-width:468px) {
+    .testimonial-left {
+        border: 10px solid #111111;
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+        max-height: 327px;
+    }
+
     .padding_gallery {
-        height: 240px;
+        height: 320px;
         padding: 10px;
         overflow: hidden;
     }
@@ -8975,7 +8982,7 @@ blockquote .shape {
     .testimonials .tns-controls {
         position: absolute;
         right: 50%;
-        bottom: 230px;
+        bottom: 170px;
         z-index: 9;
         text-align: center;
         display: inline-block;
@@ -8986,15 +8993,14 @@ blockquote .shape {
 
 @media (min-width:469px) and (max-width:767px) {
     .padding_gallery {
-        height: 340px;
-        padding: 10px;
+        height: 380px;
         overflow: hidden;
     }
 
     .testimonials .tns-controls {
         position: absolute;
         right: 50%;
-        bottom: 150px;
+        bottom: 110px;
         z-index: 9;
         text-align: center;
         display: inline-block;
@@ -9261,5 +9267,10 @@ blockquote .shape {
     margin-left: 3%;
     margin-right: auto;
     overflow: hidde;
+}
+
+.full_width_gallery {
+    padding-bottom: 53px;
+    margin-top: 19px;
 }
 }
