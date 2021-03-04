@@ -1506,21 +1506,33 @@ ol {
 }
 
 .navbar {
-    padding: 0;
+    padding: 0px;
     border-radius: 5px;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
 }
 
+@media (min-width: 320px) and (max-width: 767px){
+    .navbar {
+        padding: 0px;
+        border-radius: 5px;
+        position: fixed;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        right: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar-area {
+        width: 700px;
         padding: 17px 0;
-        position: static !important;
+        position: fixed !important;
         background-color: transparent;
 
         .header {
-            position: static !important;
+            position: fixed !important;
             display: inline-block !important;
         }
     }
@@ -1536,14 +1548,14 @@ ol {
 
 .navbar-toggler {
     padding: 0;
-    background-color: #f1d209;
-    padding: 5px 8px !important;
+    background: -webkit-linear-gradient(#f3e59a, #b98912);
+    padding: 10px 10px !important;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 
 .navbar-toggler .toggler-icon {
-    background-color: #a61474 !important;
+    background-color: #222222 !important;
 }
 
 .navbar-toggler:hover {
@@ -1668,7 +1680,9 @@ ol {
 
 .navbar-nav .nav-item a:hover,
 .navbar-nav .nav-item a.active {
-    color: #f1d209;
+    background: -webkit-linear-gradient(#f3e59a, #b98912);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar-nav .nav-item:hover a:before,
@@ -6343,10 +6357,12 @@ blockquote .shape {
     }
 
     .navbar-collapse {
-        height: 400px;
+        height: 330px;
         -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
-        overflow: scroll;
+        margin-top: -42px;
+        max-width: 250px;
+        background-image: url('../images/slider/slider_club.jpg');
     }
 
     .navbar-nav .nav-item:last-child {
@@ -6801,6 +6817,7 @@ blockquote .shape {
 
     .navbar-brand img {
         width: 130px;
+        visibility: hidden;
     }
 
     .header.index2 .navbar .navbar-nav .nav-item a {
@@ -6878,10 +6895,11 @@ blockquote .shape {
     }
 
     .navbar-collapse {
-        overflow: scroll;
-        height: 400px;
+        height: 330px;
         -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
+        background-image: url('../images/slider/slider_club.jpg');
+        margin-top: -42px;
     }
 
     .navbar-nav .nav-item:last-child {
@@ -6890,8 +6908,8 @@ blockquote .shape {
 
     .navbar-toggler {
         padding: 0;
-        background-color: #f1d209;
-        padding: 5px 8px !important;
+        background-color: -webkit-linear-gradient(#f3e59a, #b98912);
+        padding: 10px 10px !important;
     }
 
     .navbar-toggler .toggler-icon {
