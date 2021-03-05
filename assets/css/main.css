@@ -1576,20 +1576,18 @@ ol {
 @media (min-width: 320px) and (max-width: 767px){
     .navbar {
         border-radius: 5px;
-        position: fixed;
         -webkit-transition: all 0.3s ease-out 0s;
         transition: all 0.3s ease-out 0s;
         right: 0;
         background-color: rgba(0, 0, 0, 0.35);
-        width: 400px;
-        margin-right: 38px;
-        margin-left: auto;
+        width: 100%;
+        position: fixed;
     }
 }
 
 @media (max-width: 768px) {
     .navbar-area {
-        width: 700px;
+        width: 100%;
         padding: 17px 0;
         position: relative !important;
         background-color: transparent;
