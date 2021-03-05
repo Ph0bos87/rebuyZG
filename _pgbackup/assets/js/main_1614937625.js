@@ -5,7 +5,14 @@ Template Name: Rebuy Stars
 (function () {
     //===== Prealoder
 
-    
+    window.onload = function () {
+        window.setTimeout(fadeout, 500);
+    }
+
+    function fadeout() {
+        document.querySelector('#loading-area').style.opacity = '0';
+        document.querySelector('#loading-area').style.display = 'none';
+    }
 
     /*=====================================
     Sticky
@@ -24,7 +31,7 @@ Template Name: Rebuy Stars
 
         // show or hide the back-top-top button
         var backToTo = document.querySelector(".scroll-top");
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 3 || document.documentElement.scrollTop > 3) {
             backToTo.style.display = "flex";
         } else {
             backToTo.style.display = "none";

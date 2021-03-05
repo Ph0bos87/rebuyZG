@@ -991,7 +991,7 @@ ol {
     position: relative;
     padding: 70px 0;
     padding-top: 150px;
-    background-image: url("/assets/images/club/RebuyStarsZg_1.jpg");
+    background-image: url('../images/club/RebuyStarsZg_1.jpg');
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
@@ -1025,7 +1025,7 @@ ol {
     line-height: 50px;
 }
 
-.breadcrumbs-galleryr .breadcrumbs-content .page-title:before {
+.breadcrumbs-gallery .breadcrumbs-content .page-title:before {
     position: absolute;
     content: "";
     left: 0;
@@ -1214,7 +1214,7 @@ ol {
     position: absolute;
     left: 40%;
     bottom: -1px;
-    height: 3px;
+    height: 1px;
     width: 20%;
     background: #9e005d;
     content: "";
@@ -1272,8 +1272,8 @@ ol {
 
 /* One Click Scrool Top Button */
 .scroll-top {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     line-height: 45px;
     background: #f1d209;
     display: -webkit-box;
@@ -1289,7 +1289,7 @@ ol {
     color: #9e005d !important;
     border-radius: 0;
     position: fixed;
-    bottom: 30px;
+    bottom: 80px;
     right: 30px;
     z-index: 9;
     cursor: pointer;
@@ -1298,13 +1298,73 @@ ol {
     border-radius: 4px;
 }
 
+.bottom-instagram {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    background: -webkit-linear-gradient(#f3e59a, #b98912);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+    color: #111 !important;
+    border-radius: 0;
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    border-radius: 4px;
+}
+
+.bottom-facebook {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    background: -webkit-linear-gradient(#f3e59a, #b98912);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+    color: #111 !important;
+    border-radius: 0;
+    position: fixed;
+    bottom: 80px;
+    right: 0px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    border-radius: 4px;
+}
+
 .scroll-top:hover {
-    -webkit-box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
-    box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
-    -webkit-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0);
     background-color: #9e005d;
     color: #e1cf09 !important;
+}
+
+.bottom-instagram:hover {
+    background: -webkit-linear-gradient(#b98912, #f3e59a);
+    color: #9e005d !important;
+}
+
+.bottom-facebook:hover {
+    background: -webkit-linear-gradient(#b98912, #f3e59a);
+    color: #9e005d !important;
 }
 
 /* Overlay */
@@ -1488,8 +1548,6 @@ ol {
     position: fixed;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.68);
-    -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
     top: 0;
@@ -1508,23 +1566,41 @@ ol {
 }
 
 .navbar {
-    padding: 0;
+    padding: 0px;
     border-radius: 5px;
     position: relative;
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
 }
 
+@media (min-width: 320px) and (max-width: 767px){
+    .navbar {
+        padding: 0px;
+        border-radius: 5px;
+        position: fixed;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        right: 0;
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar-area {
+        width: 700px;
         padding: 17px 0;
-        position: static !important;
+        position: relative !important;
         background-color: transparent;
+    }
 
-        .header {
-            position: static !important;
-            display: inline-block !important;
-        }
+    .header {
+        position: relative !important;
+        display: inline-block !important;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+        margin-top: 10px;
     }
 }
 
@@ -1534,18 +1610,20 @@ ol {
 
 .navbar-brand img {
     width: 150px;
+    margin-top: 10px;
+    visibility: visible;
 }
 
 .navbar-toggler {
     padding: 0;
-    background-color: #f1d209;
-    padding: 5px 8px !important;
+    background: -webkit-linear-gradient(#f3e59a, #b98912);
+    padding: 10px 10px !important;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
 
 .navbar-toggler .toggler-icon {
-    background-color: #a61474 !important;
+    background-color: #222222 !important;
 }
 
 .navbar-toggler:hover {
@@ -1559,7 +1637,7 @@ ol {
 }
 
 .navbar-toggler .toggler-icon {
-    width: 22px;
+    width: 25px;
     height: 2px;
     background-color: #333;
     display: block;
@@ -1602,14 +1680,15 @@ ol {
 @media (max-width: 767px) {
     .navbar-collapse {
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
+        top: 70%;
         background-color: rgba(0, 0, 0, 0.68);
         z-index: 9;
         -webkit-box-shadow: 0px 15px 20px 0px rgba(29, 42, 93, 0.1);
         box-shadow: 0px 15px 20px 0px rgba(29, 42, 93, 0.1);
         padding: 5px 12px;
+        width: 45%;
+        right: 0;
+        background-image: url('../images/slider/slider_club.jpg');
     }
 }
 
@@ -1620,11 +1699,11 @@ ol {
 
 .navbar-nav .nav-item a {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: #FFFFFF;
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    padding: 30px 0;
+    padding: 10px 0 30px;
     position: relative;
 }
 
@@ -1670,7 +1749,9 @@ ol {
 
 .navbar-nav .nav-item a:hover,
 .navbar-nav .nav-item a.active {
-    color: #f1d209;
+    background: -webkit-linear-gradient(#f3e59a, #b98912);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar-nav .nav-item:hover a:before,
@@ -1902,7 +1983,7 @@ ol {
 
 /* Dropdown Menu */
 .header .navbar-nav li .sub-menu {
-    background: rgba(13, 13, 13, 0.8);
+    background: rgba(13, 13, 13, 0.9);
     width: 220px;
     text-align: left;
     position: absolute;
@@ -1913,8 +1994,6 @@ ol {
     padding: 15px;
     left: 0;
     margin: 0;
-    -webkit-box-shadow: 1px 4px 12px rgba(51, 51, 51, 0.25);
-    box-shadow: 0px 13px 20px rgba(153, 153, 153, 0.06);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     z-index: 9999999;
@@ -2100,11 +2179,40 @@ ol {
 }
 
 .hero-area.style2 .hero-inner .hero-text {
-    margin-top: 345px;
+    margin-top: 410px;
     background-color: #000000;
     padding-top: 2%;
     border: 10px solid #111111;
-    height: 360px;
+    height: 290px;
+    padding-left: 2%;
+}
+
+.hero-area .hero-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:998px) and (max-width:1199px) {
+    .hero-area.style2 .hero-inner .hero-text {
+        margin-top: 432px;
+        background-color: #000000;
+        padding-top: 2%;
+        border: 10px solid #111111;
+        height: 280px;
+    }
+
+    .hero-area .hero-text h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 45px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .hero-area.style2 .hero-inner-landing .hero-text {
@@ -2117,68 +2225,70 @@ ol {
 
 .hero-area.style2 .hero-image {
     position: relative;
-    bottom: -120px;
+    bottom: -180px;
     right: 0;
     border: 10px solid #111111;
     overflow: hidden;
     height: 430px;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 993px) {
     .hero-area.style2 .hero-image-landing {
-        position: relative;
+        position: absolute;
+        top: 10%;
         border: 10px solid #111111;
         overflow: hidden;
-        top: -65px;
-        max-width: 350px;
         height: 275px;
     }
 
     .hero-area.style2 .hero-image-landing2 {
-        position: relative;
-        top: -340px;
-        left: 400px;
+        position: absolute;
         border: 10px solid #111111;
         overflow: hidden;
-        max-width: 350px;
         height: 275px;
+        top: 60%;
     }
 }
 
-@media (min-width: 468px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .hero-area.style2 .hero-image-landing {
-        position: relative;
-        margin-top: -90px;
+        position: absolute;
         border: 10px solid #111111;
         overflow: hidden;
-        height: 205px;
+        max-width: 350px;
+        height: 200px;
+        bottom: 48%;
+        right: 3%;
     }
 
     .hero-area.style2 .hero-image-landing2 {
+        position: absolute;
+        border: 10px solid #111111;
+        overflow: hidden;
+        max-width: 350px;
+        height: 200px;
+        top: 53%;
+        right: 3%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .hero-area.style2 .hero-image-landing {
         position: relative;
-        margin-bottom: 120px;
+        margin-top: 54px;
         border: 10px solid #111111;
         overflow: hidden;
         height: 250px;
     }
-}
 
-.hero-area.style2 .hero-image-landing {
-    position: relative;
-    bottom: -120px;
-    right: 0;
-    border: 10px solid #111111;
-    overflow: hidden;
-    height: 275px;
-}
-
-.hero-area.style2 .hero-image-landing2 {
-    position: relative;
-    bottom: -130px;
-    right: 0;
-    border: 10px solid #111111;
-    overflow: hidden;
-    height: 225px;
+    .hero-area.style2 .hero-image-landing2 {
+        position: relative;
+        border: 10px solid #111111;
+        overflow: hidden;
+        height: 250px;
+        margin-top: 45px;
+        margin-bottom: -10px;
+    }
 }
 
 .hero-area.style2 .tns-controls {
@@ -2440,15 +2550,7 @@ ol {
 .hero-area .hero-text {
     float: none;
     margin-top: 230px;
-    padding-right: 50px;
-}
-
-.hero-area .hero-text h1 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 55px;
-    margin-bottom: 20px;
-    margin-left: 40px;
+    padding-left: 10%;
 }
 
 .hero-area .hero-text h1 span {
@@ -2458,7 +2560,7 @@ ol {
 .hero-area .hero-text p {
     font-size: 15px;
     line-height: 24px;
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .hero-area .hero-text .button {
@@ -2788,7 +2890,6 @@ ol {
     Popular games CSS
 ======================================== */
 .popular_games {
-    padding: 5%;
 }
 
 .popular_games .content-left {
@@ -3046,8 +3147,7 @@ ol {
 
 .testimonials .tns-controls {
     position: absolute;
-    right: 1;
-    bottom: 0;
+    bottom: 0px;
     z-index: 9;
 }
 
@@ -4126,8 +4226,10 @@ blockquote .shape {
    Clients CSS
 ======================================== */
 .client-logo-section {
-    padding: 0 14px 0 0;
     margin-right: 5%;
+    margin-top: -10%;
+    padding-bottom: 0px;
+    margin-bottom: -10%;
 }
 
 .client-logo-section .client-logo-wrapper .client-logo-carousel .client-logo {
@@ -6225,7 +6327,7 @@ blockquote .shape {
 /* Tablet Screen */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .section {
-        padding: 60px 0px 60px 5%;
+        padding: 60px 3%;
     }
 
     .section-title {
@@ -6324,10 +6426,12 @@ blockquote .shape {
     }
 
     .navbar-collapse {
-        height: 400px;
+        height: 330px;
         -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
-        overflow: scroll;
+        margin-top: -42px;
+        max-width: 250px;
+        background-image: url('../images/slider/slider_club.jpg');
     }
 
     .navbar-nav .nav-item:last-child {
@@ -6374,16 +6478,19 @@ blockquote .shape {
     }
 
     .hero-area.style2 .hero-inner .hero-text {
-        margin-top: 30px;
-        height: 240px;
+        margin-top: 121px;
+        height: 300px;
+        margin-left: 1%;
+        margin-right: auto;
+        width: 50%;
     }
 
     .hero-area.style2 .tns-controls button {
         width: 50px;
         height: 50px;
         z-index: 2;
-        color: #fff;
-        font-size: 25px;
+        color: #f1d209;
+        font-size: 35px;
         background: transparent;
         border: none;
         padding: 2px 5px;
@@ -6412,7 +6519,14 @@ blockquote .shape {
     }
 
     .hero-area.style2 .hero-image {
-        display: none !important;
+        top: -335px;
+        width: 50%;
+        height: 300px;
+        position: relative;
+        float: right;
+        left: 15px;
+
+        /* display: none !important */
     }
 
     .hero-area.style3 .hero-inner {
@@ -6714,7 +6828,7 @@ blockquote .shape {
 @media only screen and (max-width: 767px) {
     .section {
         padding-bottom: 50px;
-        padding-left: 0;
+        padding-left: 10px;
     }
 
     .section-title {
@@ -6731,7 +6845,7 @@ blockquote .shape {
 
     .section-title h2 {
         font-size: 25px;
-        margin-top: 3px;
+        margin-top: 20px;
         line-height: 35px;
     }
 
@@ -6771,7 +6885,9 @@ blockquote .shape {
     }
 
     .navbar-brand img {
-        width: 130px;
+        width: 80px;
+        visibility: visible;
+        opacity: 0.7;
     }
 
     .header.index2 .navbar .navbar-nav .nav-item a {
@@ -6848,25 +6964,18 @@ blockquote .shape {
         margin-bottom: 6px;
     }
 
-    .navbar-collapse {
-        overflow: scroll;
-        height: 400px;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-    }
-
     .navbar-nav .nav-item:last-child {
         padding-bottom: 20px;
     }
 
     .navbar-toggler {
         padding: 0;
-        background-color: #f1d209;
-        padding: 5px 8px !important;
+        background-color: -webkit-linear-gradient(#f3e59a, #b98912);
+        padding: 10px 10px !important;
     }
 
     .navbar-toggler .toggler-icon {
-        background-color: #a61474 !important;
+        background-color: #333 !important;
         width: 20px !important;
         margin: 3px 0 !important;
     }
@@ -6905,8 +7014,8 @@ blockquote .shape {
     }
 
     .hero-area .hero-text h1 {
-        font-size: 23px;
-        line-height: 30px;
+        font-size: 35px;
+        line-height: 45px;
     }
 
     .hero-area .hero-text .button {
@@ -6933,9 +7042,10 @@ blockquote .shape {
     }
 
     .hero-area.style2 .hero-inner .hero-text {
-        margin-top: 120px;
-        padding: 0 !important;
-        height: 200px;
+        margin-top: 115px;
+        padding: 3% !important;
+        height: 320px;
+        margin-bottom: -5px;
     }
 
     .hero-area.style2 .hero-inner .hero-text .btn {
@@ -6950,7 +7060,7 @@ blockquote .shape {
 
     .hero-area.style2 .tns-controls button {
         width: 40px;
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .hero-area.style2 .tns-controls button:hover {
@@ -7152,7 +7262,7 @@ blockquote .shape {
         display: none;
     }
 
-    .testimonials .tns-controls {
+    /* .testimonials .tns-controls {
         position: absolute;
         right: 50%;
         bottom: -65px;
@@ -7161,8 +7271,7 @@ blockquote .shape {
         display: inline-block;
         -webkit-transform: translateX(50%);
         transform: translateX(50%);
-    }
-
+    } */
     .testimonials button {
         width: 45px !important;
         height: 40px !important;
@@ -7494,7 +7603,7 @@ blockquote .shape {
     }
 
     .modal .login-modal-main {
-        padding: 25px !important;
+        padding: 1% !important;
     }
 
     .modal .login-modal-main .heading h3 {
@@ -7740,7 +7849,6 @@ blockquote .shape {
     background-color: #000000;
     margin-top: 0;
     margin-bottom: 6px;
-    padding-left: 3%;
 }
 
 .contact-us .contact-head {
@@ -7856,13 +7964,13 @@ blockquote .shape {
 
 .contact-us .contact-social ul li a {
     font-size: 20px;
-    color: #a61474;
+    color: #111111;
     height: 40px;
     width: 40px;
     text-align: center;
     display: block;
     line-height: 40px;
-    background: #f1d209;
+    background: -webkit-linear-gradient(#f3e59a, #b98912);
     border: none;
     border-radius: 4px;
     position: relative;
@@ -7870,8 +7978,8 @@ blockquote .shape {
 }
 
 .contact-us .contact-social ul li a:hover {
-    color: #f1d209;
-    background-color: #a61474;
+    color: #9e005d;
+    background: -webkit-linear-gradient(#b98912, #f3e59a);
 }
 
 .contact-us .single-info .title {
@@ -8063,7 +8171,7 @@ blockquote .shape {
     display: none;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
     outline: 0;
 }
 
@@ -8448,7 +8556,7 @@ blockquote .shape {
 
 .footer .footer-middle {
     padding-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 40px;
     background-color: #111111;
     color: #ffffff;
     font-size: ;
@@ -8870,6 +8978,18 @@ blockquote .shape {
     margin-bottom: 55%;
 }
 
+.promo_subota_img {
+    padding: 15px;
+    background-image: url('../images/promo_subota/rs_PROMOsUBOTA-600x600.jpeg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-right: 1px solid #a61474;
+    margin-bottom: 55%;
+}
+
 .current_rewards {
     padding: 15px;
     width: 100%;
@@ -8895,8 +9015,10 @@ blockquote .shape {
 }
 
 .padding_gallery {
-    padding: 10px;
     height: 490px;
+
+    /* padding-bottom: 25px */
+    padding-top: 10px;
 }
 
 @media (min-width:993px) and (max-width:1199px) {
@@ -8907,24 +9029,81 @@ blockquote .shape {
     }
 
     .padding_gallery {
-        padding-top: 10px;
-        height: 480px;
+        height: 415px;
+    }
+
+    .testimonials .tns-controls {
+        position: absolute;
+        right: 50%;
+        bottom: 70px;
+        z-index: 9;
+        text-align: center;
+        display: inline-block;
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
     }
 }
 
-@media (max-width:991px) {
-    .padding_gallery {
+@media (min-width:320px) and (max-width:468px) {
+    .testimonial-left {
+        border: 10px solid #111111;
+        width: 100%;
         padding: 10px;
-        margin-top: -10px;
+        overflow: hidden;
+        max-height: 327px;
+    }
+
+    .padding_gallery {
+        height: 320px;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    .testimonials .tns-controls {
+        position: absolute;
+        right: 50%;
+        bottom: 170px;
+        z-index: 9;
+        text-align: center;
+        display: inline-block;
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+}
+
+@media (min-width:469px) and (max-width:767px) {
+    .padding_gallery {
+        height: 380px;
+        overflow: hidden;
+    }
+
+    .testimonials .tns-controls {
+        position: absolute;
+        right: 50%;
+        bottom: 110px;
+        z-index: 9;
+        text-align: center;
+        display: inline-block;
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .padding_gallery {
+        height: 490px;
+        padding: 10px;
+        overflow: hidden;
     }
 }
 
 .testimonial-left {
     border: 10px solid #111111;
     width: 100%;
-    height: 350px;
+    height: 360px;
     padding: 20px;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 .cabaret-upcoming {
@@ -8964,8 +9143,7 @@ blockquote .shape {
 
 /* * Rebuy Jackpot CSS * */
 .rb-jackpots__wrapper {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 10%;
 }
 
 .rb-jackpots {
@@ -9090,60 +9268,55 @@ blockquote .shape {
 
 .overlay-text-left {
     position: absolute;
-    bottom: 100px;
     max-width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
     padding: 2%;
     border: 1px solid #111111;
 }
 
 .overlay-text-right {
-    position: absolute;
-    bottom: 100px;
-    max-width: 200px;
+    max-width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    right: 0;
-    padding: 2%;
-}
 
-@media (min-width:468px) and (max-width:768px) {
-    .overlay-text-left {
-        position: absolute;
-        bottom: 70%;
-        max-width: 200px;
-        background-color: rgba(0, 0, 0, 0.73);
-        right: 0;
-        width: 100%;
-    }
+    /* width: 100% */
+    padding: 2%;
+    position: absolute;
+    margin-right: auto;
+    right: 2.3%;
 }
 
 .overlay-logo {
     position: absolute;
-    bottom: 205px;
-    width: 240px;
+    width: 150px;
     z-index: 99;
     display: block;
-    margin-left: 33%;
+    margin-left: 25%;
+    top: 195px;
 }
 
 .overlay-landing-vz {
     background-color: rgba(0, 0, 0, 0.83);
-    width: 350px;
     position: absolute;
-    padding: 3%;
-    top: 0;
-    right: 0;
+    padding: 1%;
 }
 
 .landing-logo {
     width: 200px;
 }
 
-@media (min-width:480px) and (max-width:768px){
+@media (min-width:320px) and (max-width:768px){
     .landing-logo {
-        width: 100px;
+        width: 150px;
+        margin-top: 70px;
+        margin-left: -25%;
+    }
+}
+
+@media (min-width:768px) and (max-width:998px){
+    .landing-logo {
+        width: 150px;
+        margin-left: 15%;
+        margin-top: -100%;
     }
 }
 
@@ -9158,7 +9331,7 @@ blockquote .shape {
 }
 
 .rewards {
-    width: 75%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -9169,4 +9342,29 @@ blockquote .shape {
     width: 100%;
     height: 400px;
 }
+
+.gallery {
+    margin-left: 3%;
+    margin-right: auto;
+    overflow: hidde;
+}
+
+.full_width_gallery {
+    padding-bottom: 53px;
+    margin-top: 19px;
+}
+
+.black-bg {
+    background-color: #000000;
+}
+
+@media (max-width: 468px) {
+    .smaller-headline {
+        font-size: 28px;
+    }
+
+    .hero-area .hero-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
