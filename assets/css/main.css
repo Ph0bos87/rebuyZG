@@ -2278,14 +2278,14 @@ ol {
         margin-top: 3px;
         border: 10px solid #111111;
         overflow: hidden;
-        height: 250px;
+        height: 200px;
     }
 
     .hero-area.style2 .hero-image-landing2 {
         position: relative;
         border: 10px solid #111111;
         overflow: hidden;
-        height: 250px;
+        height: 200px;
         margin-top: -4px;
         margin-bottom: -10px;
     }
