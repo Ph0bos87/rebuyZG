@@ -1582,6 +1582,7 @@ ol {
         transition: all 0.3s ease-out 0s;
         right: 0;
         width: 100%;
+        background-color: rgba(0, 0, 0, 0.35);
     }
 }
 
@@ -6887,7 +6888,7 @@ blockquote .shape {
     .navbar-brand img {
         width: 80px;
         visibility: visible;
-        opacity: 0.7;
+        opacity: 0.9;
     }
 
     .header.index2 .navbar .navbar-nav .nav-item a {
