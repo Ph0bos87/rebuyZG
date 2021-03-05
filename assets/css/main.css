@@ -2257,9 +2257,9 @@ ol {
         border: 10px solid #111111;
         overflow: hidden;
         max-width: 350px;
-        height: 200px;
+        height: 100px;
         bottom: 48%;
-        right: 3%;
+        right: 2%;
     }
 
     .hero-area.style2 .hero-image-landing2 {
@@ -2267,16 +2267,15 @@ ol {
         border: 10px solid #111111;
         overflow: hidden;
         max-width: 350px;
-        height: 200px;
         top: 53%;
         right: 3%;
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
     .hero-area.style2 .hero-image-landing {
         position: relative;
-        margin-top: 54px;
+        margin-top: 3px;
         border: 10px solid #111111;
         overflow: hidden;
         height: 250px;
@@ -2287,7 +2286,7 @@ ol {
         border: 10px solid #111111;
         overflow: hidden;
         height: 250px;
-        margin-top: 45px;
+        margin-top: -4px;
         margin-bottom: -10px;
     }
 }
@@ -8941,7 +8940,7 @@ blockquote .shape {
 
 @media (max-width:768px) {
     .resize_small_window {
-        width: 100%;
+        width: 90%;
         margin-top: 20px;
         margin-left: 5%;
     }
@@ -9278,12 +9277,52 @@ blockquote .shape {
 .overlay-text-right {
     max-width: 300px;
     background-color: rgba(0, 0, 0, 0.8);
-
-    /* width: 100% */
     padding: 2%;
     position: absolute;
     margin-right: auto;
-    right: 2.3%;
+    right: 3%;
+}
+
+@media (min-width:310px) and (max-width:767px) {
+    .overlay-text-left {
+        position: absolute;
+        max-width: 200px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 2%;
+        border: 1px solid #111111;
+    }
+
+    .overlay-text-right {
+        max-width: 200px;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        /* width: 100% */
+        padding: 2%;
+        position: absolute;
+        margin-right: auto;
+        right: 10%;
+    }
+}
+
+@media (min-width:766px) and (max-width:1600px) {
+    .overlay-text-left {
+        position: absolute;
+        max-width: 250px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 2%;
+        border: 1px solid #111111;
+    }
+
+    .overlay-text-right {
+        max-width: 250px;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        /* width: 100% */
+        padding: 2%;
+        position: absolute;
+        margin-right: auto;
+        right: 3%;
+    }
 }
 
 .overlay-logo {
@@ -9298,7 +9337,7 @@ blockquote .shape {
 .overlay-landing-vz {
     background-color: rgba(0, 0, 0, 0.83);
     position: absolute;
-    padding: 1%;
+    padding: 2%;
 }
 
 .landing-logo {
@@ -9307,9 +9346,9 @@ blockquote .shape {
 
 @media (min-width:320px) and (max-width:768px){
     .landing-logo {
-        width: 150px;
+        width: 100px;
         margin-top: 70px;
-        margin-left: -25%;
+        margin-left: 0;
     }
 }
 
@@ -9371,4 +9410,10 @@ blockquote .shape {
 }
 
 .testimonial-slider {
+}
+
+@media (min-width:300px) and (max-width:991px){
+    .landing-promotions-h3 {
+        font-size: 18px;
+    }
 }
