@@ -2168,7 +2168,7 @@ ol {
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-image: url('/images/slider/slider_club.jpg');
+    background-image: url('assets/images/slider/slider_club.jpg');
 }
 
 .hero-area.style2 .home-slider {
