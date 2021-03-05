@@ -1579,7 +1579,7 @@ ol {
         -webkit-transition: all 0.3s ease-out 0s;
         transition: all 0.3s ease-out 0s;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.35);
+        background-color: rgba(0, 0, 0, 0.95);
         width: 50%;
         position: fixed;
     }
