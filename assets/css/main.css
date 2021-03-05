@@ -1580,7 +1580,7 @@ ol {
         transition: all 0.3s ease-out 0s;
         right: 0;
         background-color: rgba(0, 0, 0, 0.35);
-        width: 100%;
+        width: 50%;
         position: fixed;
     }
 }
@@ -1596,11 +1596,6 @@ ol {
     .header {
         position: relative !important;
         display: inline-block !important;
-    }
-
-    .navbar-brand img {
-        width: 150px;
-        margin-top: 10px;
     }
 }
 
@@ -2173,7 +2168,7 @@ ol {
     height: 100%;
     width: 100%;
     background-size: cover;
-    background-image: url('../images/slider/slider_club.jpg');
+    background-image: url('/images/slider/slider_club.jpg');
 }
 
 .hero-area.style2 .home-slider {
@@ -2266,7 +2261,6 @@ ol {
         border: 10px solid #111111;
         overflow: hidden;
         max-width: 350px;
-        height: 100px;
         bottom: 48%;
         right: 2%;
     }
@@ -9341,7 +9335,7 @@ blockquote .shape {
     display: block;
     margin-left: 25%;
     top: 195px;
-    margin-top: -118px;
+    margin-top: -59px;
 }
 
 .overlay-landing-vz {
