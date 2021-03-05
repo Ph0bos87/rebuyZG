@@ -1578,9 +1578,9 @@ ol {
         border-radius: 5px;
         -webkit-transition: all 0.3s ease-out 0s;
         transition: all 0.3s ease-out 0s;
-        right: 0;
+        left: 0;
         background-color: rgba(0, 0, 0, 0.95);
-        width: 75%;
+        width: 100%;
         position: fixed;
     }
 }
