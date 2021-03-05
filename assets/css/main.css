@@ -1575,14 +1575,15 @@ ol {
 
 @media (min-width: 320px) and (max-width: 767px){
     .navbar {
-        padding: 0px;
         border-radius: 5px;
         position: fixed;
         -webkit-transition: all 0.3s ease-out 0s;
         transition: all 0.3s ease-out 0s;
         right: 0;
         background-color: rgba(0, 0, 0, 0.35);
-        width: 80%;
+        width: 400px;
+        margin-right: 38px;
+        margin-left: auto;
     }
 }
 
@@ -6897,7 +6898,6 @@ blockquote .shape {
 
     .navbar-brand img {
         width: 80px;
-        visibility: visible;
         opacity: 0.9;
     }
 
@@ -9420,9 +9420,6 @@ blockquote .shape {
         font-size: 30px;
         line-height: 40px;
     }
-}
-
-.testimonial-slider {
 }
 
 @media (min-width:300px) and (max-width:991px){
