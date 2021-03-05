@@ -1581,8 +1581,8 @@ ol {
         -webkit-transition: all 0.3s ease-out 0s;
         transition: all 0.3s ease-out 0s;
         right: 0;
-        width: 100%;
         background-color: rgba(0, 0, 0, 0.35);
+        width: 80%;
     }
 }
 
@@ -1762,13 +1762,14 @@ ol {
 }
 
 .header .navbar-nav li .sub-menu li a.active {
-    background-color: transparent !important;
-    color: #f1d209 !important;
+    background: -webkit-linear-gradient(#f3e59a, #b98912);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header .navbar-nav li .sub-menu li a:hover {
-    background-color: #000 !important;
-    color: #f1d209 !important;
+    background-color: transparent !important;
+    color: #fff !important;
 }
 
 .navbar-nav .nav-item a i {
@@ -2020,6 +2021,14 @@ ol {
     margin-bottom: 6px;
 }
 
+.header .navbar-nav li .sub-menu li:hover {
+    float: none;
+    margin: 0;
+    display: block;
+    margin-bottom: 6px;
+    background-color: #000;
+}
+
 .header .navbar-nav li .sub-menu li:last-child {
     margin-bottom: 0px;
 }
@@ -2053,8 +2062,9 @@ ol {
 }
 
 .header .navbar-nav li .sub-menu li:hover a {
-    color: #000;
-    background: #2042e3;
+    background: -webkit-linear-gradient(#f3e59a, #b98912);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header .navbar-nav li .sub-menu li .sub-menu li:hover .sub-menu {
@@ -2217,7 +2227,7 @@ ol {
 }
 
 .hero-area.style2 .hero-inner-landing .hero-text {
-    margin-top: 420px;
+    margin-top: 271px;
     background-color: #000000;
     padding-top: 2%;
     border: 10px solid #111111;
@@ -2890,6 +2900,7 @@ ol {
     Popular games CSS
 ======================================== */
 .popular_games {
+    margin-bottom: -48px;
 }
 
 .popular_games .content-left {
@@ -7044,7 +7055,7 @@ blockquote .shape {
     .hero-area.style2 .hero-inner .hero-text {
         margin-top: 115px;
         padding: 3% !important;
-        height: 320px;
+        height: 263px;
         margin-bottom: -5px;
     }
 
@@ -9327,11 +9338,12 @@ blockquote .shape {
 
 .overlay-logo {
     position: absolute;
-    width: 150px;
+    width: 200px;
     z-index: 99;
     display: block;
     margin-left: 25%;
     top: 195px;
+    margin-top: -118px;
 }
 
 .overlay-landing-vz {
@@ -9349,13 +9361,14 @@ blockquote .shape {
         width: 100px;
         margin-top: 70px;
         margin-left: 0;
+        visibility: hidden;
     }
 }
 
 @media (min-width:768px) and (max-width:998px){
     .landing-logo {
         width: 150px;
-        margin-left: 15%;
+        margin-left: 25%;
         margin-top: -100%;
     }
 }
