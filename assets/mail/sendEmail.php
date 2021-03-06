@@ -10,6 +10,7 @@ if($_POST) {
    $email = trim(stripslashes($_POST['contactEmail']));
    $subject = trim(stripslashes($_POST['contactSubject']));
    $contact_message = trim(stripslashes($_POST['contactMessage']));
+   $contact_phone = trim(stripslashes($_POST['contactPhone']));
 
    // Check Name
 	if (strlen($name) < 2) {
@@ -30,6 +31,7 @@ if($_POST) {
    // Set Message
    $message .= "Email from: " . $name . "<br />";
 	$message .= "Email address: " . $email . "<br />";
+	$message .= "Phone number: " . $contact_phone . "<br />";
    $message .= "Message: <br />";
    $message .= $contact_message;
    $message .= "<br /> ----- <br /> Poruka poslana putem web forme. <br />";

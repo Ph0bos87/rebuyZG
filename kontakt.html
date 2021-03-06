@@ -97,40 +97,36 @@
                     <div class="row"> 
                         <div class="col-lg-7 col-12 wow fadeInLeft" data-wow-delay=".4s"> 
                             <div class="form-main"> 
-                                <form class="form" method="post" action="assets/mail/sendEmail.php"> 
-                                    <div class="row"> 
-                                        <div class="col-lg-6 col-12"> 
-                                            <div class="form-group"> 
-                                                <input name="name" type="text" placeholder="Ime" required="required"> 
-                                            </div>                                             
+                                <form name="contactForm" id="contactForm" method="post" action="">
+                                    <fieldset>
+                                        <div class="form-field">
+                                            <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                                        </div>
+                                        <div class="form-field">
+                                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+                                        </div>
+                                        <div class="form-field">
+                                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
                                         </div>                                         
-                                        <div class="col-lg-6 col-12"> 
-                                            <div class="form-group"> 
-                                                <input name="subject" type="text" placeholder="Predmet poruke" required="required"> 
-                                            </div>                                             
+                                        <div class="form-field">
+                                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
                                         </div>                                         
-                                        <div class="col-lg-6 col-12"> 
-                                            <div class="form-group"> 
-                                                <input name="email" type="email" placeholder="Tvoja email adresa" required="required"> 
-                                            </div>                                             
-                                        </div>                                         
-                                        <div class="col-lg-6 col-12"> 
-                                            <div class="form-group"> 
-                                                <input name="phone" type="text" placeholder="Broj telefona" required="required"> 
-                                            </div>                                             
-                                        </div>                                         
-                                        <div class="col-12"> 
-                                            <div class="form-group message"> 
-                                                <textarea name="message" placeholder="Tvoja poruka..."></textarea> 
-                                            </div>                                             
-                                        </div>                                         
-                                        <div class="col-12"> 
-                                            <div class="form-group button"> 
-                                                <button type="submit" class="btn ">Pošalji poruku</button>                                                 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
+                                        <div class="form-field">
+                                            <button class="submitForm button button-primary large">Submit</button>
+                                            <div id="submit-loader">
+                                                <div class="text-loader">Sending...</div>                                                 
+                                                <div class="s-loader">
+                                                    <div class="bounce1"></div>
+                                                    <div class="bounce2"></div>
+                                                    <div class="bounce3"></div>
+                                                </div>
+                                            </div>
+                                            <!-- submit-loader -->
+                                        </div>
+                                    </fieldset>
                                 </form>                                 
+
+                                <!-- /form -->                                 
                             </div>                             
                         </div>                         
                         <div class="col-12 col-lg-5 wow fadeInRight" data-wow-delay=".4s"> 
@@ -294,7 +290,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+		      url: "assets/mail/sendEmail.php",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
