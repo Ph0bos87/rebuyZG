@@ -8705,10 +8705,6 @@ blockquote .shape {
         margin-left: 33%;
         margin-right: auto;
     }
-
-    .distance_column {
-        margin-right: 2%;
-    }
 }
 
 @media (min-width:769px) and (max-width:991px) {
@@ -8733,13 +8729,17 @@ blockquote .shape {
 
 @media (min-width:769px) and (max-width:1399px) {
     .align_icons_bonusing {
-        margin-left: 35%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
 
 @media (max-width:768px) {
     .align_icons_bonusing {
-        margin-left: 33%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
 
