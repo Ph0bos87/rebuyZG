@@ -23,6 +23,8 @@ Template Name: Rebuy Stars
 
 
         // show or hide the back-top-top button
+        
+  // show or hide the back-top-top button
         var backToTo = document.querySelector(".scroll-top");
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             backToTo.style.display = "flex";
@@ -30,7 +32,6 @@ Template Name: Rebuy Stars
             backToTo.style.display = "none";
         }
     };
-
     // for menu scroll 
     var pageLink = document.querySelectorAll('.page-scroll');
 
