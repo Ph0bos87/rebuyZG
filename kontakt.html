@@ -39,30 +39,26 @@
                                     <span class="toggler-icon"></span> 
                                     <span class="toggler-icon"></span> 
                                 </button>                                 
-                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent"> 
+                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">                                      
                                     <ul id="nav" class="navbar-nav ml-auto"> 
                                         <li class="nav-item"> 
-                                            <a href="index.html">Početna</a> 
+                                            <a class="active" href="o_nama.html">O nama</a> 
                                         </li>                                         
                                         <li class="nav-item"> 
-                                            <a href="nagradne_igre.html">Nagradne igre</a> 
+                                            <a href="kontakt.html">Kontakt</a> 
+                                            <ul class="sub-menu">
+                                                <li class="nav-item">
+                                                    <a href="posao_rebuy.html">Zapošljavanje</a> 
+                                                </li>
+                                            </ul>
                                         </li>                                         
                                         <li class="nav-item"> 
-                                            <a href="promocije.html">Promocije</a> 
+                                            <a href="covid_rebuy.html">Covid</a> 
                                         </li>                                         
                                         <li class="nav-item"> 
-                                            <a href="bonusing_card.html">Bonusing Card</a> 
+                                            <a href="odgovorno_igranje.html">Odgovorno igranje</a> 
                                         </li>                                         
-                                        <li class="nav-item"> 
-                                            <a href="cabaret.html">Cabaret</a> 
-                                        </li>                                         
-                                        <li class="nav-item"> 
-                                            <a href="galerija.html">Galerija</a> 
-                                        </li>                                         
-                                        <li class="nav-item"> 
-                                            <a class="active" href="virtualna_setnja_360.html">360°</a> 
-                                        </li>                                         
-                                    </ul>                                     
+                                    </ul>
                                 </div>                                 
                                 <!-- navbar collapse -->                                 
                             </nav>                             
@@ -91,48 +87,53 @@
         </div>         
         <!-- End Breadcrumbs -->         
         <!-- Start Contact Area -->         
+        <!-- Start Contact Area -->         
         <section id="contact-us" class="contact-us section"> 
             <div class="container"> 
-                <div class="contact-head"> 
+                <div class="contact-head wow fadeInUp" data-wow-delay=".6s"> 
                     <div class="row"> 
-                        <div class="col-lg-7 col-12 wow fadeInLeft" data-wow-delay=".4s"> 
+                        <div class="col-lg-7 col-12"> 
                             <div class="form-main"> 
-                                <form name="contactForm" id="contactForm" method="post" action="">
-                                    <fieldset>
-                                        <div class="form-field">
-                                            <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                                        </div>
-                                        <div class="form-field">
-                                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-                                        </div>
-                                        <div class="form-field">
-                                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+                                <form class="form" method="post" action="assets/mail/mail.php"> 
+                                    <div class="row"> 
+                                        <div class="col-lg-6 col-12"> 
+                                            <div class="form-group"> 
+                                                <input name="name" type="text" placeholder="Ime" required="required"> 
+                                            </div>                                             
                                         </div>                                         
-                                        <div class="form-field">
-                                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+                                        <div class="col-lg-6 col-12"> 
+                                            <div class="form-group"> 
+                                                <input name="subject" type="text" placeholder="Predmet poruke" required="required"> 
+                                            </div>                                             
                                         </div>                                         
-                                        <div class="form-field">
-                                            <button class="submitForm button button-primary large">Submit</button>
-                                            <div id="submit-loader">
-                                                <div class="text-loader">Sending...</div>                                                 
-                                                <div class="s-loader">
-                                                    <div class="bounce1"></div>
-                                                    <div class="bounce2"></div>
-                                                    <div class="bounce3"></div>
-                                                </div>
-                                            </div>
-                                            <!-- submit-loader -->
-                                        </div>
-                                    </fieldset>
+                                        <div class="col-lg-6 col-12"> 
+                                            <div class="form-group"> 
+                                                <input name="email" type="email" placeholder="Tvoja email adresa" required="required"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-lg-6 col-12"> 
+                                            <div class="form-group"> 
+                                                <input name="phone" type="text" placeholder="Broj telefona" required="required"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-12"> 
+                                            <div class="form-group message"> 
+                                                <textarea name="message" placeholder="Tvoja poruka..."></textarea> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-12"> 
+                                            <div class="form-group button"> 
+                                                <button type="submit" class="btn ">Pošalji</button>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
                                 </form>                                 
-
-                                <!-- /form -->                                 
                             </div>                             
                         </div>                         
-                        <div class="col-12 col-lg-5 wow fadeInRight" data-wow-delay=".4s"> 
+                        <div class="col-12 col-lg-5"> 
                             <div class="single-head"> 
                                 <div class="contant-inner-title"> 
-                                    <h4>Kontakt informacije</h4> 
+                                    <h4>Kontakt informacije - Zagreb</h4> 
                                 </div>                                 
                                 <div class="single-info"> 
                                     <i class="lni lni-phone"></i> 
@@ -170,10 +171,10 @@
                                     <h5>Prati nas i na društvenim mrežama</h5> 
                                     <ul> 
                                         <li> 
-                                            <a href="#"><i class="lni lni-facebook-original"></i></a> 
+                                            <a href="https://www.facebook.com/RebuyStarsZagreb/" target="_new"><i class="lni lni-facebook-original"></i></a> 
                                         </li>                                         
                                         <li> 
-                                            <a href="#"><i class="lni lni-instagram-original"></i></a> 
+                                            <a href="https://www.instagram.com/zagrebrebuystars/" target="_new"><i class="lni lni-instagram-original"></i></a> 
                                         </li>                                         
                                     </ul>                                     
                                 </div>                                 
@@ -183,7 +184,7 @@
                 </div>                 
             </div>             
             <!-- Start Google-map Area -->             
-            <div class="map-section mt-10" style="width: 100%;"> 
+            <div class="map-section mt-10"> 
                 <div class="container"> 
                     <div class="row"> 
                         <div class="col-12"> 
@@ -191,6 +192,120 @@
                                 <div class="mapouter"> 
                                     <div class="gmap_canvas"> 
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11134.86178975832!2d15.9884973!3d45.7568503!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b4478dbe29f73e2!2sRebuy%20Stars!5e0!3m2!1shr!2shr!4v1612812660705!5m2!1shr!2shr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                                         
+                                        <style>.mapouter { position: relative; text-align: right; height: 400px; width: 100%; } .gmap_canvas { overflow: hidden; background: none !important; height: 400px; width: 100%; }</style>                                         
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+            <!-- End Google-map Area -->             
+        </section>
+        <section id="contact-us" class="contact-us section"> 
+            <div class="container"> 
+                <div class="contact-head wow fadeInUp" data-wow-delay=".6s"> 
+                    <div class="row"> 
+                        <div class="col-lg-7 col-12"> 
+                            <div class="form-main"> 
+                                <form class="form" method="post" action="assets/mail/mail.php"> 
+                                    <div class="row"> 
+                                        <div class="col-lg-6 col-12"> 
+                                            <div class="form-group"> 
+                                                <input name="name" type="text" placeholder="Ime" required="required"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-lg-6 col-12"> 
+                                            <div class="form-group"> 
+                                                <input name="subject" type="text" placeholder="Predmet poruke" required="required"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-lg-6 col-12"> 
+                                            <div class="form-group"> 
+                                                <input name="email" type="email" placeholder="Tvoja email adresa" required="required"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-lg-6 col-12"> 
+                                            <div class="form-group"> 
+                                                <input name="phone" type="text" placeholder="Broj telefona" required="required"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-12"> 
+                                            <div class="form-group message"> 
+                                                <textarea name="message" placeholder="Tvoja poruka..."></textarea> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="col-12"> 
+                                            <div class="form-group button"> 
+                                                <button type="submit" class="btn ">Pošalji</button>                                                 
+                                            </div>                                             
+                                        </div>                                         
+                                    </div>                                     
+                                </form>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="col-12 col-lg-5"> 
+                            <div class="single-head"> 
+                                <div class="contant-inner-title"> 
+                                    <h4>Kontakt informacije - Varaždin</h4> 
+                                </div>                                 
+                                <div class="single-info"> 
+                                    <i class="lni lni-phone"></i> 
+                                    <ul> 
+                                        <li> 
+                                            <a href="tel:+385 42 352 718">+385 42 352 718</a> (Blagajna)
+                                        </li>                                         
+                                    </ul>                                     
+                                </div>                                 
+                                <div class="single-info"> 
+                                    <i class="lni lni-phone"></i> 
+                                    <ul> 
+                                        <li> 
+                                            <a href="tel:+385 91 618 5556">+385 91 618 5556</a> (Cabaret)
+                                        </li>                                         
+                                    </ul>                                     
+                                </div>                                 
+                                <div class="single-info"> 
+                                    <i class="lni lni-envelope"></i> 
+                                    <ul> 
+                                        <li> 
+                                            <a href="mailto:info@yourwebsite.com">info@rebuystars.hr</a> 
+                                        </li>                                         
+                                    </ul>                                     
+                                </div>                                 
+                                <div class="single-info"> 
+                                    <i class="lni lni-map"></i> 
+                                    <ul> 
+                                        <li>Ulica Grada Lipika 15
+                                            <br> 42204 Donji Kneginec
+                                        </li>                                         
+                                    </ul>                                     
+                                </div>                                 
+                                <div class="contact-social"> 
+                                    <h5>Prati nas i na društvenim mrežama</h5> 
+                                    <ul> 
+                                        <li> 
+                                            <a href="https://www.facebook.com/Rebuy-Stars-Vara%C5%BEdin-704857049952107/" target="_new"><i class="lni lni-facebook-original"></i></a> 
+                                        </li>                                         
+                                        <li> 
+                                            <a href="https://www.instagram.com/rebuy.stars.vz/?hl=hr" target="_new"><i class="lni lni-instagram-original"></i></a> 
+                                        </li>                                         
+                                    </ul>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </div>                 
+            </div>             
+            <!-- Start Google-map Area -->             
+            <div class="map-section mt-10"> 
+                <div class="container"> 
+                    <div class="row"> 
+                        <div class="col-12"> 
+                            <div class="map-container wow fadeInUp" data-wow-delay=".6s"> 
+                                <div class="mapouter"> 
+                                    <div class="gmap_canvas"> 
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5516.588601677936!2d16.375869411114508!3d46.264255304628925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e8b81a7566a77f3!2sRebuy%20Stars%20Vara%C5%BEdin!5e0!3m2!1sen!2shr!4v1612885113912!5m2!1sen!2shr" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                                         
                                         <style>.mapouter { position: relative; text-align: right; height: 400px; width: 100%; } .gmap_canvas { overflow: hidden; background: none !important; height: 400px; width: 100%; }</style>                                         
                                     </div>                                     
                                 </div>                                 
@@ -230,6 +345,36 @@
                                         <span style="font-size: 15px; display: inline !important;">info@rebuystars.hr</span> 
                                     </li>                                     
                                     <li> 
+                                        <span>Telefon (blagajna):</span> +385 1 6052 251
+                                    </li>                                     
+                                    <li> 
+                                        <span>Telefon (cabaret):</span> +385 91 618 5556
+                                    </li>                                     
+                                </ul>                                 
+                                <div class="footer-social"> 
+</div>                                 
+                            </div>                             
+                            <!-- End Single Widget -->                             
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-6 wow fadeInLeft" data-wow-delay=".4s"> 
+</div>
+                        <div class="align-right col-12 col-lg-4 col-md-6 fadeInLeft wow" data-wow-delay=".4s"> 
+                            <!-- Single Widget -->                             
+                            <div class="f-about single-footer"> 
+                                <h3>Rebuy Stars Varaždin<br></h3> 
+                                <ul class="contact-address"> 
+                                    <li> 
+                                        <span>Adresa:</span>&nbsp;
+                                        <div>Ulica Grada Lipika 15
+                                            <br>
+                                            42204 Donji Kneginec
+                                        </div>                                         
+                                    </li>                                     
+                                    <li> 
+                                        <span>Email:</span>&nbsp;
+                                        <span style="font-size: 15px; display: inline !important;">info@rebuystars.hr</span> 
+                                    </li>                                     
+                                    <li> 
                                         <span>Telefon (blagajna):</span> +385 42 352 718
                                     </li>                                     
                                     <li> 
@@ -240,16 +385,6 @@
 </div>                                 
                             </div>                             
                             <!-- End Single Widget -->                             
-                        </div>                         
-                        <div class="col-12 col-lg-8 col-md-6 wow fadeInLeft" data-wow-delay=".4s"> 
-                            <div class="map-container wow fadeInUp" data-wow-delay=".6s"> 
-                                <div class="mapouter"> 
-                                    <div class="gmap_canvas"> 
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11134.86178975832!2d15.9884973!3d45.7568503!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b4478dbe29f73e2!2sRebuy%20Stars!5e0!3m2!1shr!2shr!4v1612812660705!5m2!1shr!2shr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                                         
-                                        <style>.mapouter { position: relative; text-align: right; height: 250px; width: 100%; } .gmap_canvas { overflow: hidden; background: none !important; height: 250px; width: 100%; }</style>                                         
-                                    </div>                                     
-                                </div>                                 
-                            </div>                             
                         </div>                         
                     </div>                     
                 </div>                 
@@ -279,53 +414,5 @@
         <script src="assets/js/tiny-slider.js"></script>         
         <script src="assets/js/glightbox.min.js"></script>         
         <script src="assets/js/main.js"></script>
-        <script type="text/javascript">
-    $('#contactForm').validate({
-
-		/* submit via ajax */
-		submitHandler: function(form) {
-
-			var sLoader = $('#submit-loader');
-
-			$.ajax({      	
-
-		      type: "POST",
-		      url: "assets/mail/sendEmail.php",
-		      data: $(form).serialize(),
-		      beforeSend: function() { 
-
-		      	sLoader.fadeIn(); 
-
-		      },
-		      success: function(msg) {
-
-	            // Message was sent
-	            if (msg == 'OK') {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
-
-		      },
-		      error: function() {
-
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
-
-		      }
-
-	      });     		
-  		}
-
-	});
-		</script>
     </body>     
 </html>
