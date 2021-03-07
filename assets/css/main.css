@@ -9110,10 +9110,21 @@ blockquote .shape {
 .testimonial-job-left {
     border: 10px solid #111111;
     width: 100%;
-    height: 480px;
+    height: 580px;
     padding: 20px;
     margin-bottom: 0;
     overflow: hidden;
+}
+
+@media (min-width: 310px) and  (max-width: 400px) {
+    .testimonial-job-left {
+        border: 10px solid #111111;
+        width: 100%;
+        height: 750px;
+        padding: 10px;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
 }
 
 .cabaret-upcoming {
