@@ -16,7 +16,8 @@
         <link rel="stylesheet" href="assets/css/animate.css"/> 
         <link rel="stylesheet" href="assets/css/tiny-slider.css"/> 
         <link rel="stylesheet" href="assets/css/glightbox.min.css"/> 
-        <link rel="stylesheet" href="assets/css/main.css"/> 
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/gdpr-cookie.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"> 
     </head>     
     <body> 
@@ -268,16 +269,6 @@
             </div>             
             <!-- End Footer Bottom -->             
         </footer>         
-        <div class="alert alert-dismissible text-center cookiealert" role="alert">
-            <div class="cookiealert-container">
-                Naše stranice koriste »kolačiće« u analitičke i tehničke svrhe. Isti su nužni za funkcioniranje stranica 
-
-                <a href="http://cookiesandyou.com/" target="_blank">Saznaj više o "kolačićima"</a>
-                <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
-                    Slažem se
-</button>
-            </div>
-        </div>
         <!--/ End Footer Area -->         
         <!-- ========================= scroll-top ========================= -->         
         <!-- ========================= JS here ========================= -->         
@@ -286,56 +277,31 @@
         <script src="assets/js/wow.min.js"></script>         
         <script src="assets/js/main.js"></script>
         <script src="assets/js/countUp.js"></script>         
-        <script type="text/javascript">
-    jQuery(document).ready(function () {
-        var reqUrl = "https://kirota.hr/jackpots_all.php";
-        var jackpotsJSON = false;
-        var counters = {};
-        var interval;
+        <script src="assets/js/gdpr-cookie.js"></script>
+        <script>
+    $.gdprcookie.init({
+        title: "🍪 Accept cookies & privacy policy?",
+        message: "There are no cookies used on this site, but if there were this message could be customized to provide more details. Click the <strong>accept</strong> button below to see the optional callback in action… <a href=#privacy>Example privacy link</a>",
+        delay: 600,
+        expires: 1,
+        acceptBtnLabel: "Accept cookies",
+    });
 
-        var initOptions = {
-            suffix: ' kn',
-            separator: '.',
-            decimal: ','
-        };
-
-        jQuery.getJSON(reqUrl, function (data) {
-            jackpotsJSON = data;
-
-            jQuery('.rb-jackpot').each(function (index) {
-                var jackpot = this;
-                var city = jQuery(jackpot).attr('data-city');
-                var type = jQuery(jackpot).attr('data-type');
-                var value = parseFloat(jackpotsJSON[city][type].replace(',', ''));
-
-                jQuery(jackpot).find('.rb-jackpot__value').attr('id', city + type);
-
-                counters[city + type] = new CountUp(city + type, 0, value, 2, 2, initOptions);
-
-                if (!counters[city + type].error) {
-                    counters[city + type].start();
-                } else {
-                    console.error(counters[city + type].error);
-                }
-            });
+    $(document.body)
+        .on("gdpr:show", function() {
+            console.log("Cookie dialog is shown");
+        })
+        .on("gdpr:accept", function() {
+            var preferences = $.gdprcookie.preference();
+            console.log("Preferences saved:", preferences);
+        })
+        .on("gdpr:advanced", function() {
+            console.log("Advanced button was pressed");
         });
 
-        interval = setInterval(function () {
-
-            jQuery.getJSON(reqUrl, function (data) {
-                jackpotsJSON = data;
-
-                jQuery('.rb-jackpot').each(function (index) {
-                    var jackpot = this;
-                    var city = jQuery(jackpot).attr('data-city');
-                    var type = jQuery(jackpot).attr('data-type');
-                    var value = parseFloat(jackpotsJSON[city][type].replace(',', ''));
-
-                    counters[city + type].update(value);
-                });
-            });
-        }, 15 * 100);
-    });
-		</script>
+    if ($.gdprcookie.preference("marketing") === true) {
+        console.log("This should run because marketing is accepted.");
+    }
+            </script>
     </body>     
 </html>
