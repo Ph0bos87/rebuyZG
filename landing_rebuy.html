@@ -270,38 +270,21 @@
             <!-- End Footer Bottom -->             
         </footer>         
         <!--/ End Footer Area -->         
-        <!-- ========================= scroll-top ========================= -->         
+        <!-- ========================= scroll-top ========================= -->
+        <div class="alert alert-dismissible text-center cookiealert" role="alert">
+            <div class="cookiealert-container">
+                Naše stranice koriste »kolačiće« u analitičke i tehničke svrhe. Isti su nužni za funkcioniranje stranica 
+                <a href="http://cookiesandyou.com/" target="_blank">Saznaj više o "kolačićima"</a>
+                <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+                    Slažem se
+</button>
+            </div>
+        </div>
         <!-- ========================= JS here ========================= -->         
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/wow.min.js"></script>         
         <script src="assets/js/main.js"></script>
         <script src="assets/js/countUp.js"></script>         
-        <script src="assets/js/gdpr-cookie.js"></script>
-        <script>
-    $.gdprcookie.init({
-        title: "🍪 Accept cookies & privacy policy?",
-        message: "There are no cookies used on this site, but if there were this message could be customized to provide more details. Click the <strong>accept</strong> button below to see the optional callback in action… <a href=#privacy>Example privacy link</a>",
-        delay: 600,
-        expires: 1,
-        acceptBtnLabel: "Accept cookies",
-    });
-
-    $(document.body)
-        .on("gdpr:show", function() {
-            console.log("Cookie dialog is shown");
-        })
-        .on("gdpr:accept", function() {
-            var preferences = $.gdprcookie.preference();
-            console.log("Preferences saved:", preferences);
-        })
-        .on("gdpr:advanced", function() {
-            console.log("Advanced button was pressed");
-        });
-
-    if ($.gdprcookie.preference("marketing") === true) {
-        console.log("This should run because marketing is accepted.");
-    }
-            </script>
     </body>     
 </html>
