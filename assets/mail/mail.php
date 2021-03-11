@@ -7,15 +7,15 @@ $message = $_POST['message'];
 
 $email_message = "
 
-Name: ".$name."
-Subject: ".$subject."
+Ime: ".$name."
+Predmet poruke: ".$subject."
 Email: ".$email."
-Phone: ".$phone."
-Message: ".$message."
+Telefon: ".$phone."
+Poruka: ".$message."
 
 ";
 
-mail ("kcegur@gmail.com" , "New Message", $email_message);
+mail ("info@rebuystars.hr" , "Novi email sa web stranice", $email_message);
 header("location: ../../mail-success.html");
 ?>
 

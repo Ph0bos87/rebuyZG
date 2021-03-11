@@ -1,0 +1,35 @@
+
+# BEGIN Add Expires Headers Plugin
+# Disable ETags
+<IfModule mod_headers.c>
+Header unset ETag
+</IfModule>
+FileETag None
+# Disable ETags
+<IfModule mod_expires.c>
+ExpiresActive on
+ExpiresByType image/gif "access plus 30 days"
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/jpg "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/ico "access plus 30 days"
+ExpiresByType image/tiff "access plus 30 days"
+ExpiresByType image/webp "access plus 30 days"
+ExpiresByType text/css "access plus 30 days"
+</IfModule>
+# END Add Expires Headers Plugin
+
+#This Apache config file was created by Duplicator Installer on 2019-04-28 16:02:22.
+#The original can be found in archived file with the name htaccess.orig
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
