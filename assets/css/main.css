@@ -116,7 +116,7 @@ h6 a {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 25px;
 }
 
 h2 {
@@ -173,10 +173,6 @@ ol {
     margin-top: 25px;
 }
 
-.mt-30 {
-    margin-top: 30px;
-}
-
 .mt-35 {
     margin-top: 35px;
 }
@@ -201,10 +197,6 @@ ol {
 
 .mt-55 {
     margin-top: 55px;
-}
-
-.mt-60 {
-    margin-top: 60px;
 }
 
 .mt-65 {
@@ -2195,8 +2187,8 @@ ol {
 }
 
 .hero-area .hero-text h1 {
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 500;
     line-height: 55px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -2223,11 +2215,11 @@ ol {
 }
 
 .hero-area.style2 .hero-inner-landing .hero-text {
-    margin-top: 271px;
+    margin-top: 300px;
     background-color: #000000;
     padding-top: 2%;
     border: 10px solid #111111;
-    height: 300px;
+    height: 200px;
 }
 
 .hero-area.style2 .hero-image {
@@ -2243,14 +2235,12 @@ ol {
     .hero-area.style2 .hero-image-landing {
         position: absolute;
         top: 15%;
-        border: 10px solid #111111;
         overflow: hidden;
         height: 275px;
     }
 
     .hero-area.style2 .hero-image-landing2 {
         position: absolute;
-        border: 10px solid #111111;
         overflow: hidden;
         height: 275px;
         top: 60%;
@@ -2260,7 +2250,6 @@ ol {
 @media (min-width: 768px) and (max-width: 992px) {
     .hero-area.style2 .hero-image-landing {
         position: absolute;
-        border: 10px solid #111111;
         overflow: hidden;
         max-width: 350px;
         bottom: 48%;
@@ -2269,7 +2258,6 @@ ol {
 
     .hero-area.style2 .hero-image-landing2 {
         position: absolute;
-        border: 10px solid #111111;
         overflow: hidden;
         max-width: 350px;
         top: 53%;
@@ -2280,19 +2268,17 @@ ol {
 @media (min-width: 300px) and (max-width: 767px) {
     .hero-area.style2 .hero-image-landing {
         position: relative;
-        margin-top: 3px;
-        border: 10px solid #111111;
+        margin-top: 10px;
         overflow: hidden;
-        height: 200px;
+        height: 160px;
     }
 
     .hero-area.style2 .hero-image-landing2 {
         position: relative;
-        border: 10px solid #111111;
         overflow: hidden;
         height: 200px;
         margin-top: -4px;
-        margin-bottom: -10px;
+        margin-bottom: -15px;
     }
 }
 
@@ -6482,7 +6468,7 @@ blockquote .shape {
 
     .hero-area.style2 .hero-inner .hero-text {
         margin-top: 121px;
-        height: 300px;
+        height: 200px;
         margin-left: 1%;
         margin-right: auto;
         width: 50%;
@@ -6832,6 +6818,7 @@ blockquote .shape {
     .section {
         padding-bottom: 50px;
         padding-left: 10px;
+        margin-top: 8px;
     }
 
     .section-title {
@@ -7045,7 +7032,7 @@ blockquote .shape {
     .hero-area.style2 .hero-inner .hero-text {
         margin-top: 172px;
         padding: 3% !important;
-        height: 310px;
+        height: 200px;
         margin-bottom: -5px;
     }
 
@@ -9363,9 +9350,13 @@ blockquote .shape {
 }
 
 .overlay-landing-vz {
-    background-color: rgba(0, 0, 0, 0.83);
     position: absolute;
     padding: 2%;
+    width: 98%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 1%;
+    margin-right: auto;
+    margin-top: 1%;
 }
 
 .landing-logo {
@@ -9499,4 +9490,11 @@ blockquote .shape {
     .mobile-only {
         display: none;
     }
+}
+
+.border-gold {
+    border: 1px solid;
+    border-image-source: linear-gradient(45deg, #f2f213, #946b00);
+    border-image-slice: 1;
+    padding: 5px;
 }
