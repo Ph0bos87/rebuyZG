@@ -1,0 +1,63 @@
+
+# BEGIN Add Expires Headers Plugin
+# Disable ETags
+<IfModule mod_headers.c>
+Header unset ETag
+</IfModule>
+FileETag None
+# Disable ETags
+<IfModule mod_expires.c>
+ExpiresActive on
+ExpiresByType image/gif "access plus 30 days"
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/jpg "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/ico "access plus 30 days"
+ExpiresByType image/tiff "access plus 30 days"
+ExpiresByType image/webp "access plus 30 days"
+ExpiresByType text/css "access plus 30 days"
+</IfModule>
+# END Add Expires Headers Plugin
+
+#Reset by Duplicator Installer.  Original can be found in .htaccess.181121105507.orig
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# Wordfence WAF
+<Files ".user.ini">
+<IfModule mod_authz_core.c>
+Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+Order deny,allow
+Deny from all
+</IfModule>
+</Files>
+
+# END Wordfence WAF
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://rebuystars.hr/$1 [R=301,L]
+
+Header set content-Security-Policy: upgrade-insecure-requests

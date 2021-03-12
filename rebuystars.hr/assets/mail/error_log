@@ -1,0 +1,9 @@
+[09-Mar-2021 12:21:43 America/Chicago] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[09-Mar-2021 12:21:43 America/Chicago] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[09-Mar-2021 12:21:43 America/Chicago] PHP Fatal error:  Unknown: Failed opening required '/home2/automati6836/public_html/wordfence-waf.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in Unknown on line 0
+[10-Mar-2021 14:09:54 America/Chicago] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[10-Mar-2021 14:09:54 America/Chicago] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[10-Mar-2021 14:09:54 America/Chicago] PHP Fatal error:  Unknown: Failed opening required '/home2/automati6836/public_html/wordfence-waf.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in Unknown on line 0
+[11-Mar-2021 12:11:01 America/Chicago] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[11-Mar-2021 12:11:01 America/Chicago] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[11-Mar-2021 12:11:01 America/Chicago] PHP Fatal error:  Unknown: Failed opening required '/home2/automati6836/public_html/wordfence-waf.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in Unknown on line 0
